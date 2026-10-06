@@ -11,6 +11,17 @@ import ai1 from './posts/ai/1-deep-learning.md';
 import ai2 from './posts/ai/2-reinforcement-learning.md';
 import ai3 from './posts/ai/3-data-distribution.md';
 import ai4 from './posts/ai/4-computer-science.md';
+import stat1 from './posts/statistics/1-descriptive-statistics.md';
+import stat2 from './posts/statistics/2-population-and-sampling.md';
+import stat3 from './posts/statistics/3-bias-and-variance.md';
+import stat4 from './posts/statistics/4-maximum-likelihood.md';
+import stat5 from './posts/statistics/5-confidence-intervals.md';
+import stat6 from './posts/statistics/6-hypothesis-testing.md';
+import stat7 from './posts/statistics/7-ab-testing.md';
+import stat8 from './posts/statistics/8-linear-regression.md';
+import stat9 from './posts/statistics/9-logistic-regression.md';
+import stat10 from './posts/statistics/10-bayesian-inference.md';
+import stat11 from './posts/statistics/11-model-evaluation.md';
 import linalg1 from './posts/linalg/1-vectors.md';
 import linalg2 from './posts/linalg/2-dot-product-and-cosine-similarity.md';
 import linalg3 from './posts/linalg/3-matrices-and-matrix-multiplication.md';
@@ -42,6 +53,17 @@ export const examplePosts = [
   ai2,
   ai3,
   ai4,
+  stat1,
+  stat2,
+  stat3,
+  stat4,
+  stat5,
+  stat6,
+  stat7,
+  stat8,
+  stat9,
+  stat10,
+  stat11,
   linalg1,
   linalg2,
   linalg3,
