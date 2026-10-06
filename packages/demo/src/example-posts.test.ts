@@ -18,7 +18,7 @@ const filesOf = (dir: string) =>
 
 test('모든 예시 포스트가 example-posts.ts에 등록되어 있다', () => {
   const index = readFileSync(new URL('./example-posts.ts', import.meta.url), 'utf8');
-  assert.deepEqual(series, ['ai', 'lang']);
+  assert.deepEqual(series, ['ai', 'calculus', 'discrete', 'infotheory', 'lang', 'linalg', 'probability', 'statistics']);
   for (const dir of series) {
     for (const file of filesOf(dir)) assert.ok(index.includes(`./posts/${dir}/${file}`), `${dir}/${file} 미등록`);
   }
@@ -43,15 +43,19 @@ for (const dir of series) {
       seriesName ??= m[1];
       assert.equal(m[1], seriesName, '같은 폴더는 같은 시리즈 이름');
 
-      for (const section of ['> **한 줄 요약** — ', '## 이 글에서 다루는 것', '## 정리']) {
+      // 수학 시리즈는 기존 언어·AI 글과의 연결을 보여 주는 섹션이 필수다.
+      const required = ['> **한 줄 요약** — ', '## 이 글에서 다루는 것', '## 정리'];
+      if (!['lang', 'ai'].includes(dir)) required.push('## 어디에 쓰이나');
+      for (const section of required) {
         assert.ok(post.body.includes(section), `"${section}" 섹션 없음`);
       }
       const prose = post.body.replace(/^```[\s\S]*?^```/gm, ''); // 코드 블록 속 `# 주석`은 제외
       assert.doesNotMatch(prose, /^# /m, '본문에는 # 제목을 쓰지 않는다(페이지 제목과 겹침)');
 
       // `**용어(English)**조사`처럼 문장부호 뒤에 한글이 붙으면 강조가 닫히지 않고 `**`가 그대로 보인다.
+      // 곱셈 기호로 쓴 `*`도 강조로 오인되므로, 코드 밖에는 `*`가 남으면 안 된다(곱셈은 × 또는 ·).
       const text = renderMarkdown(post.body).replace(/<pre>[\s\S]*?<\/pre>|<code>[\s\S]*?<\/code>/g, '');
-      assert.doesNotMatch(text, /\*\*/, '렌더링 결과에 `**`가 남아 있다(강조가 적용되지 않음)');
+      assert.doesNotMatch(text, /\*/, '렌더링 결과에 `*`가 남아 있다(강조 실패 또는 곱셈 기호)');
     });
   }
 }
