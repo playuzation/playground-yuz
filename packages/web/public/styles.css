@@ -181,6 +181,13 @@ main.container {
   padding: 6px 10px;
   text-align: left;
   vertical-align: top;
+  /* 좁은 화면에서 글자 단위로 끊기지 않게: 단어 단위로 줄바꿈하고, 넘치면 표 안에서 가로 스크롤 */
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+.markdown table code {
+  white-space: nowrap;
 }
 
 .markdown th {
