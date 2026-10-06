@@ -23,6 +23,18 @@ import disc9 from './posts/discrete/9-trees.md';
 import disc10 from './posts/discrete/10-graph-search.md';
 import disc11 from './posts/discrete/11-asymptotic-notation.md';
 import disc12 from './posts/discrete/12-number-systems-and-modular-arithmetic.md';
+import prob1 from './posts/probability/1-probability-basics.md';
+import prob2 from './posts/probability/2-conditional-probability.md';
+import prob3 from './posts/probability/3-bayes-theorem.md';
+import prob4 from './posts/probability/4-random-variables-and-expectation.md';
+import prob5 from './posts/probability/5-variance-covariance-correlation.md';
+import prob6 from './posts/probability/6-discrete-distributions.md';
+import prob7 from './posts/probability/7-continuous-distributions.md';
+import prob8 from './posts/probability/8-normal-distribution.md';
+import prob9 from './posts/probability/9-joint-marginal-conditional.md';
+import prob10 from './posts/probability/10-law-of-large-numbers-and-clt.md';
+import prob11 from './posts/probability/11-sampling-and-monte-carlo.md';
+import prob12 from './posts/probability/12-markov-chains.md';
 import stat1 from './posts/statistics/1-descriptive-statistics.md';
 import stat2 from './posts/statistics/2-population-and-sampling.md';
 import stat3 from './posts/statistics/3-bias-and-variance.md';
@@ -87,6 +99,18 @@ export const examplePosts = [
   disc10,
   disc11,
   disc12,
+  prob1,
+  prob2,
+  prob3,
+  prob4,
+  prob5,
+  prob6,
+  prob7,
+  prob8,
+  prob9,
+  prob10,
+  prob11,
+  prob12,
   stat1,
   stat2,
   stat3,
