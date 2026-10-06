@@ -1,0 +1,111 @@
+name: CI
+
+on:
+  push:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: verify (deps · typecheck · unit · build)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run verify
+
+  e2e:
+    name: e2e (Playwright · Chromium)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run e2e
+      - uses: actions/upload-artifact@v7
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: playwright-report
+          retention-days: 14
+      - uses: actions/upload-artifact@v7
+        if: ${{ !cancelled() }}
+        with:
+          name: screenshots
+          path: e2e/screenshots
+          retention-days: 14
+
+  # 기본 브랜치에서만: 데모(브라우저 안 백엔드) + Playwright 리포트를 GitHub Pages로 배포한다.
+  # 모바일 브라우저로 데모를 직접 만져 보고, 테스트 리포트(스크린샷 포함)를 볼 수 있다.
+  pages:
+    name: deploy demo + report (GitHub Pages)
+    if: github.ref_name == github.event.repository.default_branch
+    needs: [verify, e2e]
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Check that GitHub Pages is enabled
+        id: enabled
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh api "repos/${{ github.repository }}/pages" > /dev/null 2>&1; then
+            echo "value=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::GitHub Pages가 꺼져 있어 배포를 건너뜁니다. Settings → Pages → Source를 'GitHub Actions'로 설정하세요."
+          fi
+      - if: steps.enabled.outputs.value == 'true'
+        uses: actions/checkout@v7
+      - if: steps.enabled.outputs.value == 'true'
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - if: steps.enabled.outputs.value == 'true'
+        run: npm ci && npm run build -w @playground/demo
+      - if: steps.enabled.outputs.value == 'true'
+        uses: actions/download-artifact@v8
+        with:
+          name: playwright-report
+          path: playwright-report
+      - if: steps.enabled.outputs.value == 'true'
+        run: |
+          mkdir -p site
+          cp -r packages/demo/dist/. site/
+          cp -r playwright-report site/report
+      - if: steps.enabled.outputs.value == 'true'
+        uses: actions/configure-pages@v6
+      - if: steps.enabled.outputs.value == 'true'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+      - if: steps.enabled.outputs.value == 'true'
+        id: deploy
+        uses: actions/deploy-pages@v5
+      - if: steps.enabled.outputs.value == 'true'
+        run: |
+          {
+            echo "### 배포 완료"
+            echo "- 데모: ${{ steps.deploy.outputs.page_url }}"
+            echo "- 테스트 리포트: ${{ steps.deploy.outputs.page_url }}report/"
+          } >> "$GITHUB_STEP_SUMMARY"
