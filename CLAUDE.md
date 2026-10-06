@@ -47,6 +47,15 @@ L0  core (도메인 타입, 검증, Store 계약, MemoryStore — 외부 의존 
 - Store 구현을 바꾸거나 추가하면 `@playground/core/store-contract`의 계약 테스트를 통과시켜야 한다(실서버와 데모의 동작 일치 보장).
 - 포스트는 텍스트만: 마크다운의 HTML·이미지는 렌더링하지 않는다(`packages/web/src/markdown.ts`).
 
+## 브랜치와 병합
+
+- `main`: 기본 브랜치이자 배포(GitHub Pages) 기준. 직접 push하지 않는다.
+- `dev`: 통합 브랜치. 직접 push하지 않는다.
+- `feat/{feature}`: 작업 브랜치. 최신 `dev`에서 분기한다. 클라우드 세션이 `claude/*` 브랜치를 지정해도 이 규칙을 따른다(사용자 결정).
+- 병합은 PR로 한다. Claude가 PR을 만들고, PR head 커밋의 CI가 통과한 것을 확인한 뒤 직접 병합한다.
+  - `feat/*` → `dev`: squash 병합. 병합한 feat 브랜치는 삭제한다.
+  - `dev` → `main`: merge commit(squash 금지, dev와 main 이력을 맞추기 위해). 사용자가 요청할 때 진행한다.
+
 ## 환경 메모
 
 - `@playwright/test`는 **1.56.1로 고정**한다. 클라우드 컨테이너의 `/opt/pw-browsers`에 있는 Chromium(revision 1194)과 맞는 버전이다. 올리면 컨테이너 E2E가 깨지므로, 올려야 한다면 `launchOptions.executablePath: '/opt/pw-browsers/chromium'`을 함께 설정한다. `playwright install`은 컨테이너에서 실행하지 않는다(CI에서만).
