@@ -168,6 +168,25 @@ main.container {
   padding: 0;
 }
 
+.markdown table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.markdown th,
+.markdown td {
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.markdown th {
+  background: var(--code-bg);
+}
+
 .markdown blockquote {
   margin: 0;
   padding-left: 12px;
