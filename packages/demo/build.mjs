@@ -18,6 +18,7 @@ const ctx = await context({
   jsxImportSource: 'preact',
   minify: true,
   sourcemap: true,
+  loader: { '.md': 'text' },
   logLevel: 'warning',
 });
 await ctx.rebuild();

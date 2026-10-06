@@ -5,7 +5,8 @@
   "layer": 1,
   "description": "브라우저 UI(Preact SPA). API와는 fetch 함수로만 통신하므로 실제 서버/데모 백엔드를 가리지 않는다.",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./markdown": "./src/markdown.ts"
   },
   "scripts": {
     "build": "node build.mjs",

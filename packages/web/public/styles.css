@@ -168,6 +168,32 @@ main.container {
   padding: 0;
 }
 
+.markdown table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.markdown th,
+.markdown td {
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: top;
+  /* 좁은 화면에서 글자 단위로 끊기지 않게: 단어 단위로 줄바꿈하고, 넘치면 표 안에서 가로 스크롤 */
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+.markdown table code {
+  white-space: nowrap;
+}
+
+.markdown th {
+  background: var(--code-bg);
+}
+
 .markdown blockquote {
   margin: 0;
   padding-left: 12px;
