@@ -1,0 +1,14 @@
+{
+  "name": "@playground/core",
+  "private": true,
+  "type": "module",
+  "layer": 0,
+  "description": "도메인 모델, 입력 검증, 저장소 계약(Store)과 메모리 구현. 외부 의존 없음.",
+  "exports": {
+    ".": "./src/index.ts",
+    "./store-contract": "./src/store-contract.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p ."
+  }
+}

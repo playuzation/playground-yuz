@@ -1,0 +1,22 @@
+{
+  "name": "@playground/web",
+  "private": true,
+  "type": "module",
+  "layer": 1,
+  "description": "브라우저 UI(Preact SPA). API와는 fetch 함수로만 통신하므로 실제 서버/데모 백엔드를 가리지 않는다.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@playground/core": "*",
+    "markdown-it": "^15.0.2",
+    "preact": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.2.0"
+  }
+}

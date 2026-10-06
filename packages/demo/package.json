@@ -1,0 +1,17 @@
+{
+  "name": "@playground/demo",
+  "private": true,
+  "type": "module",
+  "layer": 2,
+  "description": "정적 데모 빌드: web UI + api를 브라우저 안에서 MemoryStore로 실행. GitHub Pages에서 실제 기기로 테스트하는 용도.",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node build.mjs --serve",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@playground/api": "*",
+    "@playground/core": "*",
+    "@playground/web": "*"
+  }
+}

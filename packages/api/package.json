@@ -1,0 +1,17 @@
+{
+  "name": "@playground/api",
+  "private": true,
+  "type": "module",
+  "layer": 1,
+  "description": "HTTP API(Hono). 웹 표준 API만 사용하므로 Node 서버와 브라우저(데모) 양쪽에서 동작한다.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@playground/core": "*",
+    "hono": "^4.13.13"
+  }
+}

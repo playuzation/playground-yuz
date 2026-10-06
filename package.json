@@ -1,0 +1,31 @@
+{
+  "name": "playground-yuz",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "workspaces": [
+    "packages/core",
+    "packages/api",
+    "packages/web",
+    "packages/server",
+    "packages/demo"
+  ],
+  "scripts": {
+    "check:deps": "node scripts/check-deps.mjs",
+    "typecheck": "npm run typecheck --workspaces --if-present && tsc -p e2e",
+    "test": "node --disable-warning=ExperimentalWarning --test \"packages/*/src/**/*.test.ts\"",
+    "build": "npm run build --workspaces --if-present",
+    "verify": "npm run check:deps && npm run typecheck && npm test && npm run build",
+    "e2e": "playwright test -c e2e",
+    "shots": "playwright test -c e2e tour",
+    "start": "npm run build -w @playground/web && npm start -w @playground/server"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@types/node": "^22.18.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
+  }
+}
