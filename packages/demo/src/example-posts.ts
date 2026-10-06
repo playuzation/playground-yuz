@@ -11,6 +11,10 @@ import ai1 from './posts/ai/1-deep-learning.md';
 import ai2 from './posts/ai/2-reinforcement-learning.md';
 import ai3 from './posts/ai/3-data-distribution.md';
 import ai4 from './posts/ai/4-computer-science.md';
+import info1 from './posts/infotheory/1-information-and-entropy.md';
+import info2 from './posts/infotheory/2-cross-entropy.md';
+import info3 from './posts/infotheory/3-kl-divergence.md';
+import info4 from './posts/infotheory/4-mutual-information.md';
 import { parsePost } from './parse-post.ts';
 
-export const examplePosts = [lang1, lang2, lang3, lang4, lang5, lang6, lang7, lang8, ai1, ai2, ai3, ai4].map(parsePost);
+export const examplePosts = [lang1, lang2, lang3, lang4, lang5, lang6, lang7, lang8, ai1, ai2, ai3, ai4, info1, info2, info3, info4].map(parsePost);
