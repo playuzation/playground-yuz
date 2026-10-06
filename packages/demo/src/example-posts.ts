@@ -11,6 +11,18 @@ import ai1 from './posts/ai/1-deep-learning.md';
 import ai2 from './posts/ai/2-reinforcement-learning.md';
 import ai3 from './posts/ai/3-data-distribution.md';
 import ai4 from './posts/ai/4-computer-science.md';
+import disc1 from './posts/discrete/1-sets-and-functions.md';
+import disc2 from './posts/discrete/2-propositional-logic.md';
+import disc3 from './posts/discrete/3-predicate-logic-and-proof.md';
+import disc4 from './posts/discrete/4-induction-and-recursion.md';
+import disc5 from './posts/discrete/5-relations.md';
+import disc6 from './posts/discrete/6-permutations-and-combinations.md';
+import disc7 from './posts/discrete/7-pigeonhole-and-inclusion-exclusion.md';
+import disc8 from './posts/discrete/8-graph-basics.md';
+import disc9 from './posts/discrete/9-trees.md';
+import disc10 from './posts/discrete/10-graph-search.md';
+import disc11 from './posts/discrete/11-asymptotic-notation.md';
+import disc12 from './posts/discrete/12-number-systems-and-modular-arithmetic.md';
 import stat1 from './posts/statistics/1-descriptive-statistics.md';
 import stat2 from './posts/statistics/2-population-and-sampling.md';
 import stat3 from './posts/statistics/3-bias-and-variance.md';
@@ -53,6 +65,18 @@ export const examplePosts = [
   ai2,
   ai3,
   ai4,
+  disc1,
+  disc2,
+  disc3,
+  disc4,
+  disc5,
+  disc6,
+  disc7,
+  disc8,
+  disc9,
+  disc10,
+  disc11,
+  disc12,
   stat1,
   stat2,
   stat3,
