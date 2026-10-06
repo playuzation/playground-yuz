@@ -46,6 +46,16 @@ import linalg9 from './posts/linalg/9-orthogonality-and-projection.md';
 import linalg10 from './posts/linalg/10-singular-value-decomposition.md';
 import linalg11 from './posts/linalg/11-principal-component-analysis.md';
 import linalg12 from './posts/linalg/12-tensors-and-broadcasting.md';
+import calc1 from './posts/calculus/1-functions-and-limits.md';
+import calc2 from './posts/calculus/2-derivatives.md';
+import calc3 from './posts/calculus/3-differentiation-rules-and-chain-rule.md';
+import calc4 from './posts/calculus/4-exponential-and-logarithm.md';
+import calc5 from './posts/calculus/5-integrals.md';
+import calc6 from './posts/calculus/6-taylor-series.md';
+import calc7 from './posts/calculus/7-partial-derivatives-and-gradient.md';
+import calc8 from './posts/calculus/8-multivariable-chain-rule-and-jacobian.md';
+import calc9 from './posts/calculus/9-optimization-and-convexity.md';
+import calc10 from './posts/calculus/10-gradient-descent.md';
 import info1 from './posts/infotheory/1-information-and-entropy.md';
 import info2 from './posts/infotheory/2-cross-entropy.md';
 import info3 from './posts/infotheory/3-kl-divergence.md';
@@ -100,6 +110,16 @@ export const examplePosts = [
   linalg10,
   linalg11,
   linalg12,
+  calc1,
+  calc2,
+  calc3,
+  calc4,
+  calc5,
+  calc6,
+  calc7,
+  calc8,
+  calc9,
+  calc10,
   info1,
   info2,
   info3,
