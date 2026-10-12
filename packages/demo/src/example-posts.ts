@@ -72,6 +72,11 @@ import info1 from './posts/infotheory/1-information-and-entropy.md';
 import info2 from './posts/infotheory/2-cross-entropy.md';
 import info3 from './posts/infotheory/3-kl-divergence.md';
 import info4 from './posts/infotheory/4-mutual-information.md';
+import ow1 from './posts/openweight/1-llama-3-anatomy.md';
+import ow2 from './posts/openweight/2-long-context-attention-layouts.md';
+import ow3 from './posts/openweight/3-moe-models.md';
+import ow4 from './posts/openweight/4-hybrid-models.md';
+import ow5 from './posts/openweight/5-reading-config-json.md';
 import { parsePost } from './parse-post.ts';
 
 export const examplePosts = [
@@ -148,4 +153,9 @@ export const examplePosts = [
   info2,
   info3,
   info4,
+  ow1,
+  ow2,
+  ow3,
+  ow4,
+  ow5,
 ].map(parsePost);
