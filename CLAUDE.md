@@ -25,7 +25,7 @@
 ## 아키텍처 규칙 (트리/계층, 순환 금지)
 
 ```
-L2  server (Node: SQLite + 정적 파일)     demo (정적 데모: web + api + MemoryStore)
+L2  server (Node: SQLite + 정적 파일)     demo (Pages 사이트: 정적 읽기 페이지 + 데모 web + api + MemoryStore)
 L1  api (Hono HTTP, 웹 표준 API만)        web (Preact SPA, 마크다운 렌더링)
 L0  core (도메인 타입, 검증, Store 계약, MemoryStore — 외부 의존 없음)
 ```
@@ -50,14 +50,17 @@ L0  core (도메인 타입, 검증, Store 계약, MemoryStore — 외부 의존 
 ## 브랜치와 병합
 
 - `main`: 기본 브랜치이자 배포(GitHub Pages) 기준. 직접 push하지 않는다.
-- `dev`: 통합 브랜치. 직접 push하지 않는다.
-- `feat/{feature}`: 작업 브랜치. 최신 `dev`에서 분기한다. 클라우드 세션이 `claude/*` 브랜치를 지정해도 이 규칙을 따른다(사용자 결정).
+- `dev`: 통합 브랜치. 직접 push하지 않는다(아래의 재생성만 예외).
+- 작업 브랜치는 최신 `dev`에서 분기한다. 클라우드 세션이 `claude/*` 브랜치를 지정해도 이 규칙을 따른다(사용자 결정).
+  - `feat/{feature}`: 코드를 추가·변경하는 작업.
+  - `docs/{topic}`: 코드 변경 없이 md 같은 텍스트 파일만 추가·수정하는 작업(CLAUDE.md, README, 포스트 원문 등). 예시 포스트를 싣기 위한 `example-posts.ts` 등록 줄만 함께 바뀌는 경우도 여기에 포함한다.
 - 병합은 PR로 한다. Claude가 PR을 만들고, PR head 커밋의 CI가 통과한 것을 확인한 뒤 직접 병합한다.
-  - `feat/*` → `dev`: squash 병합. 병합한 feat 브랜치는 삭제한다.
+  - `feat/*`, `docs/*` → `dev`: squash 병합. 병합된 브랜치는 저장소의 "병합된 브랜치 자동 삭제" 설정이 지운다.
   - `dev` → `main`: merge commit(squash 금지, dev와 main 이력을 맞추기 위해). 사용자가 요청할 때 진행한다.
+  - **`dev` → `main` 병합이 성공하면 자동 삭제 설정 때문에 `dev`도 함께 지워진다. 병합 직후 바로 `main`을 기점으로 `dev`를 다시 만든다**(사용자가 승인한 절차): `git fetch origin main && git push origin origin/main:refs/heads/dev`
 
 ## 환경 메모
 
 - `@playwright/test`는 **1.56.1로 고정**한다. 클라우드 컨테이너의 `/opt/pw-browsers`에 있는 Chromium(revision 1194)과 맞는 버전이다. 올리면 컨테이너 E2E가 깨지므로, 올려야 한다면 `launchOptions.executablePath: '/opt/pw-browsers/chromium'`을 함께 설정한다. `playwright install`은 컨테이너에서 실행하지 않는다(CI에서만).
 - 세션 시작 훅(`.claude/hooks/session-start.sh`)이 `npm install`을 해 둔다.
-- GitHub Pages(기본 브랜치에서만 배포): 루트 = 데모, `/report/` = Playwright 리포트.
+- GitHub Pages(기본 브랜치에서만 배포): 루트 = 정적 읽기 사이트(`packages/demo/src/site`, 예시 포스트를 빌드 때 HTML로 렌더링), `/app/` = 체험 데모, `/report/` = Playwright 리포트. 새 시리즈를 추가하면 `site/series.ts`에도 등록한다(없으면 빌드가 멈춘다).

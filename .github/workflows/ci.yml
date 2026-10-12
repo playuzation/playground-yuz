@@ -106,6 +106,7 @@ jobs:
         run: |
           {
             echo "### 배포 완료"
-            echo "- 데모: ${{ steps.deploy.outputs.page_url }}"
+            echo "- 읽기 사이트: ${{ steps.deploy.outputs.page_url }}"
+            echo "- 체험 데모: ${{ steps.deploy.outputs.page_url }}app/"
             echo "- 테스트 리포트: ${{ steps.deploy.outputs.page_url }}report/"
           } >> "$GITHUB_STEP_SUMMARY"

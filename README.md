@@ -11,7 +11,7 @@
 | --- | --- | --- |
 | 타입·의존 규칙·단위/통합 테스트 | 클라우드 컨테이너 + GitHub Actions (`npm run verify`) | Claude 보고, GitHub 앱의 체크 표시 |
 | 실제 브라우저 E2E (Chromium, 데스크톱·모바일 뷰포트) | 컨테이너에 미리 설치된 Chromium + GitHub Actions (`npm run e2e`) | Claude가 대화창으로 보내는 스크린샷, Pages의 테스트 리포트 |
-| 사람이 직접 만져 보기 | GitHub Pages의 **데모** (서버 없이 브라우저 안에서 API가 동작) | 휴대폰 브라우저로 데모 URL 열기 |
+| 사람이 직접 만져 보기 | GitHub Pages의 **읽기 사이트**와 **데모** (서버 없이 브라우저 안에서 API가 동작) | 휴대폰 브라우저로 사이트 URL 열기 |
 
 핵심 아이디어:
 
@@ -26,7 +26,8 @@ GitHub 저장소 → **Settings → Pages → Build and deployment → Source: `
 
 설정 후 기본 브랜치에 push될 때마다 아래 주소로 배포됩니다. 설정 전에는 배포 단계만 건너뛰고 CI는 정상 통과합니다.
 
-- 데모: https://playuzation.github.io/playground-yuz/
+- 읽기 사이트(프로젝트 소개 + 예시 포스트, 로그인 없이 읽기): https://playuzation.github.io/playground-yuz/
+- 체험 데모(가입·글쓰기·좋아요·댓글): https://playuzation.github.io/playground-yuz/app/
 - 테스트 리포트: https://playuzation.github.io/playground-yuz/report/
 
 ## 구조
@@ -35,7 +36,7 @@ GitHub 저장소 → **Settings → Pages → Build and deployment → Source: `
 
 ```
 L2  server ─ Node 런타임: SQLite 저장소 + API + 정적 파일
-    demo   ─ 정적 데모: web + api + 메모리 저장소 (GitHub Pages)
+    demo   ─ GitHub Pages 사이트: 예시 포스트 정적 읽기 페이지 + 정적 데모(web + api + 메모리 저장소)
 L1  api    ─ HTTP API (Hono, Node와 브라우저 양쪽에서 동작)
     web    ─ UI (Preact SPA, 마크다운 렌더링)
 L0  core   ─ 도메인 타입, 입력 검증, 저장소 계약(Store), 메모리 저장소
