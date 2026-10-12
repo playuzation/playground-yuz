@@ -72,6 +72,31 @@ import info1 from './posts/infotheory/1-information-and-entropy.md';
 import info2 from './posts/infotheory/2-cross-entropy.md';
 import info3 from './posts/infotheory/3-kl-divergence.md';
 import info4 from './posts/infotheory/4-mutual-information.md';
+import attn1 from './posts/attention/1-query-key-value.md';
+import attn2 from './posts/attention/2-multi-head-attention-and-masks.md';
+import attn3 from './posts/attention/3-positional-encoding-and-rope.md';
+import attn4 from './posts/attention/4-kv-cache-mqa-gqa-mla.md';
+import attn5 from './posts/attention/5-sliding-window-and-sparse-attention.md';
+import attn6 from './posts/attention/6-linear-attention.md';
+import attn7 from './posts/attention/7-flash-attention.md';
+import attn8 from './posts/attention/8-sage-attention.md';
+import attn9 from './posts/attention/9-paged-attention-and-flash-decoding.md';
+import layer1 from './posts/layers/1-linear-layer.md';
+import layer2 from './posts/layers/2-convolution-layer.md';
+import layer3 from './posts/layers/3-recurrent-layer.md';
+import layer4 from './posts/layers/4-lstm.md';
+import layer5 from './posts/layers/5-gru.md';
+import layer6 from './posts/layers/6-transformer-encoder-decoder.md';
+import layer7 from './posts/layers/7-normalization-layers.md';
+import layer8 from './posts/layers/8-feed-forward-swiglu.md';
+import layer9 from './posts/layers/9-mixture-of-experts.md';
+import layer10 from './posts/layers/10-state-space-models-mamba.md';
+import layer11 from './posts/layers/11-delta-rule-gated-deltanet.md';
+import ow1 from './posts/openweight/1-llama-3-anatomy.md';
+import ow2 from './posts/openweight/2-long-context-attention-layouts.md';
+import ow3 from './posts/openweight/3-moe-models.md';
+import ow4 from './posts/openweight/4-hybrid-models.md';
+import ow5 from './posts/openweight/5-reading-config-json.md';
 import { parsePost } from './parse-post.ts';
 
 export const examplePosts = [
@@ -148,4 +173,29 @@ export const examplePosts = [
   info2,
   info3,
   info4,
+  attn1,
+  attn2,
+  attn3,
+  attn4,
+  attn5,
+  attn6,
+  attn7,
+  attn8,
+  attn9,
+  layer1,
+  layer2,
+  layer3,
+  layer4,
+  layer5,
+  layer6,
+  layer7,
+  layer8,
+  layer9,
+  layer10,
+  layer11,
+  ow1,
+  ow2,
+  ow3,
+  ow4,
+  ow5,
 ].map(parsePost);
