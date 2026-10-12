@@ -25,7 +25,7 @@
 ## 아키텍처 규칙 (트리/계층, 순환 금지)
 
 ```
-L2  server (Node: SQLite + 정적 파일)     demo (정적 데모: web + api + MemoryStore)
+L2  server (Node: SQLite + 정적 파일)     demo (Pages 사이트: 정적 읽기 페이지 + 데모 web + api + MemoryStore)
 L1  api (Hono HTTP, 웹 표준 API만)        web (Preact SPA, 마크다운 렌더링)
 L0  core (도메인 타입, 검증, Store 계약, MemoryStore — 외부 의존 없음)
 ```
@@ -63,4 +63,4 @@ L0  core (도메인 타입, 검증, Store 계약, MemoryStore — 외부 의존 
 
 - `@playwright/test`는 **1.56.1로 고정**한다. 클라우드 컨테이너의 `/opt/pw-browsers`에 있는 Chromium(revision 1194)과 맞는 버전이다. 올리면 컨테이너 E2E가 깨지므로, 올려야 한다면 `launchOptions.executablePath: '/opt/pw-browsers/chromium'`을 함께 설정한다. `playwright install`은 컨테이너에서 실행하지 않는다(CI에서만).
 - 세션 시작 훅(`.claude/hooks/session-start.sh`)이 `npm install`을 해 둔다.
-- GitHub Pages(기본 브랜치에서만 배포): 루트 = 데모, `/report/` = Playwright 리포트.
+- GitHub Pages(기본 브랜치에서만 배포): 루트 = 정적 읽기 사이트(`packages/demo/src/site`, 예시 포스트를 빌드 때 HTML로 렌더링), `/app/` = 체험 데모, `/report/` = Playwright 리포트. 새 시리즈를 추가하면 `site/series.ts`에도 등록한다(없으면 빌드가 멈춘다).

@@ -13,7 +13,7 @@ async function shot(page: Page, testInfo: TestInfo, name: string) {
 }
 
 test('주요 화면 둘러보기', async ({ page }, testInfo) => {
-  await page.goto('/');
+  await page.goto('./');
   await expect(page.getByRole('heading', { level: 1, name: '최근 포스트' })).toBeVisible();
   await shot(page, testInfo, '01-home');
 
@@ -50,7 +50,7 @@ test('주요 화면 둘러보기', async ({ page }, testInfo) => {
   await expect(page.getByRole('article').filter({ hasText: title }).first()).toBeVisible();
   await shot(page, testInfo, '03-home-with-posts');
 
-  await page.goto('/#/new');
+  await page.goto('./#/new');
   await page.getByLabel('제목').fill('작성 화면');
   await page.getByLabel('본문').fill('# 마크다운으로 작성');
   await shot(page, testInfo, '04-new-post');

@@ -21,13 +21,13 @@ test('잘못된 비밀번호와 중복 아이디는 오류를 보여 준다', as
   const username = await signup(page);
   await logout(page);
 
-  await page.goto('/#/login');
+  await page.goto('./#/login');
   await page.getByLabel('아이디').fill(username);
   await page.getByLabel('비밀번호').fill('wrong-password');
   await page.getByRole('button', { name: '로그인' }).click();
   await expect(page.getByRole('alert')).toHaveText('아이디 또는 비밀번호가 올바르지 않습니다.');
 
-  await page.goto('/#/signup');
+  await page.goto('./#/signup');
   await page.getByLabel('아이디').fill(username);
   await page.getByLabel('비밀번호').fill(PASSWORD);
   await page.getByRole('button', { name: '가입하기' }).click();

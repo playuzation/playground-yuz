@@ -9,7 +9,7 @@ export const uniqueName = (prefix: string) =>
 export const header = (page: Page) => page.getByRole('banner');
 
 export async function signup(page: Page, username = uniqueName('u')): Promise<string> {
-  await page.goto('/#/signup');
+  await page.goto('./#/signup');
   await page.getByLabel('아이디').fill(username);
   await page.getByLabel('비밀번호').fill(PASSWORD);
   await page.getByRole('button', { name: '가입하기' }).click();

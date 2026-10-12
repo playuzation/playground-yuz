@@ -34,13 +34,13 @@ test('본문의 HTML은 실행되지 않고 글자 그대로 보인다', async (
 
 test('제목 없이 게시하면 오류를 보여 준다', async ({ page }) => {
   await signup(page);
-  await page.goto('/#/new');
+  await page.goto('./#/new');
   await page.getByLabel('본문').fill('본문만 있음');
   await page.getByRole('button', { name: '게시하기' }).click();
   await expect(page.getByRole('alert')).toHaveText('제목은 1~100자여야 합니다.');
 });
 
 test('로그인하지 않으면 새 글 대신 로그인 화면이 나온다', async ({ page }) => {
-  await page.goto('/#/new');
+  await page.goto('./#/new');
   await expect(page.getByRole('heading', { level: 1, name: '로그인' })).toBeVisible();
 });
