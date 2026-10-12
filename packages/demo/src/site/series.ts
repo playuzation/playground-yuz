@@ -14,4 +14,7 @@ export const SERIES: SeriesInfo[] = [
   { name: '선형대수', slug: 'linalg', description: '벡터와 행렬, 고유값, SVD, PCA, 텐서' },
   { name: '미적분', slug: 'calculus', description: '극한과 미분, 연쇄 법칙, 그래디언트, 경사 하강법' },
   { name: '정보 이론', slug: 'infotheory', description: '엔트로피, 교차 엔트로피, KL 발산, 상호 정보량' },
+  { name: '어텐션', slug: 'attention', description: '어텐션의 기본부터 RoPE, KV 캐시, 리니어·플래시·세이지 어텐션까지' },
+  { name: '신경망 레이어', slug: 'layers', description: '선형·합성곱·순환 층에서 트랜스포머, MoE, 맘바, Gated DeltaNet까지' },
+  { name: '오픈 웨이트 모델', slug: 'openweight', description: '라마, 젬마, 딥시크, Qwen 같은 공개 모델이 레이어를 조합하는 방식' },
 ];
