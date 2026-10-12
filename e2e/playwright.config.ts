@@ -3,12 +3,12 @@ import { fileURLToPath } from 'node:url';
 
 // 같은 테스트를 두 백엔드에 돌린다:
 //  - fullstack: 실제 Node 서버 + SQLite(:memory:)
-//  - demo: GitHub Pages에 올라가는 정적 데모(브라우저 안 API + MemoryStore)
+//  - demo: GitHub Pages에 올라가는 정적 데모(브라우저 안 API + MemoryStore), 읽기 사이트(site.spec)
 // 클라우드 컨테이너에는 Chromium(1194)이 미리 설치되어 있어 @playwright/test를 1.56.1로 고정한다.
 const CI = !!process.env.CI;
 const root = fileURLToPath(new URL('..', import.meta.url));
 const FULLSTACK_URL = 'http://localhost:4173';
-const DEMO_URL = 'http://localhost:4174';
+const DEMO_URL = 'http://localhost:4174/app/'; // 루트는 정적 읽기 사이트, 데모 앱은 /app/
 const report = ['html', { open: 'never', outputFolder: '../playwright-report' }] as const;
 
 export default defineConfig({

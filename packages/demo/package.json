@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "layer": 2,
-  "description": "정적 데모 빌드: web UI + api를 브라우저 안에서 MemoryStore로 실행. GitHub Pages에서 실제 기기로 테스트하는 용도.",
+  "description": "GitHub Pages 사이트: 예시 포스트 정적 읽기 페이지(src/site)와 체험 데모(web UI + 브라우저 안 api + MemoryStore, /app/).",
   "scripts": {
     "build": "node build.mjs",
     "serve": "node build.mjs --serve",
