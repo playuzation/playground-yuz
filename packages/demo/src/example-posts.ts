@@ -72,6 +72,15 @@ import info1 from './posts/infotheory/1-information-and-entropy.md';
 import info2 from './posts/infotheory/2-cross-entropy.md';
 import info3 from './posts/infotheory/3-kl-divergence.md';
 import info4 from './posts/infotheory/4-mutual-information.md';
+import attn1 from './posts/attention/1-query-key-value.md';
+import attn2 from './posts/attention/2-multi-head-attention-and-masks.md';
+import attn3 from './posts/attention/3-positional-encoding-and-rope.md';
+import attn4 from './posts/attention/4-kv-cache-mqa-gqa-mla.md';
+import attn5 from './posts/attention/5-sliding-window-and-sparse-attention.md';
+import attn6 from './posts/attention/6-linear-attention.md';
+import attn7 from './posts/attention/7-flash-attention.md';
+import attn8 from './posts/attention/8-sage-attention.md';
+import attn9 from './posts/attention/9-paged-attention-and-flash-decoding.md';
 import ow1 from './posts/openweight/1-llama-3-anatomy.md';
 import ow2 from './posts/openweight/2-long-context-attention-layouts.md';
 import ow3 from './posts/openweight/3-moe-models.md';
@@ -153,6 +162,15 @@ export const examplePosts = [
   info2,
   info3,
   info4,
+  attn1,
+  attn2,
+  attn3,
+  attn4,
+  attn5,
+  attn6,
+  attn7,
+  attn8,
+  attn9,
   ow1,
   ow2,
   ow3,
