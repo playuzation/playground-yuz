@@ -29,22 +29,20 @@ Hugging Face 허브의 모델 저장소에는 가중치 파일과 함께 config.
 ```
 
 ## 필드 해설
-| 필드 | 뜻 | 관련 글 |
-|---|---|---|
-| `hidden_size` | 잔차 스트림 폭 d | 신경망 레이어 1편 |
-| `num_hidden_layers` | 블록 수 | 이 시리즈 1편 |
-| `num_attention_heads` | 쿼리 헤드 수 | 어텐션 2편 |
-| `num_key_value_heads` | KV 헤드 수(GQA) | 어텐션 4편 |
-| `head_dim` | 헤드 차원 | 어텐션 2편 |
-| `intermediate_size` | FFN 은닉 크기 | 신경망 레이어 8편 |
-| `rope_theta` | RoPE 기저 θ | 어텐션 3편 |
-| `sliding_window` | 윈도 크기 | 이 시리즈 2편 |
-| `layer_types` | 층별 어텐션 종류 | 이 시리즈 2편 |
-| `num_experts` 등 | 전문가 수 | 신경망 레이어 9편 |
-| `num_experts_per_tok` | 토큰당 선택 수 k | 이 시리즈 3편 |
-| `moe_intermediate_size` | 전문가 은닉 크기 | 이 시리즈 3편 |
-| `kv_lora_rank` | MLA 잠재 차원 | 어텐션 4편 |
-| `tie_word_embeddings` | 출력 헤드 공유 여부 | 이 시리즈 1편 |
+- `hidden_size`: 잔차 스트림 폭 d (신경망 레이어 1편)
+- `num_hidden_layers`: 블록 수 (이 시리즈 1편)
+- `num_attention_heads`: 쿼리 헤드 수 (어텐션 2편)
+- `num_key_value_heads`: GQA의 KV 헤드 수 (어텐션 4편)
+- `head_dim`: 헤드 차원 (어텐션 2편)
+- `intermediate_size`: FFN 은닉 크기 (신경망 레이어 8편)
+- `rope_theta`: RoPE 기저 θ (어텐션 3편)
+- `sliding_window`: 윈도 크기 (이 시리즈 2편)
+- `layer_types`: 층별 어텐션 종류 (이 시리즈 2편)
+- `num_experts` 등: 전문가 수 (신경망 레이어 9편)
+- `num_experts_per_tok`: 토큰당 선택 수 k (이 시리즈 3편)
+- `moe_intermediate_size`: 전문가 은닉 크기 (이 시리즈 3편)
+- `kv_lora_rank`: MLA 잠재 차원 (어텐션 4편)
+- `tie_word_embeddings`: 출력 헤드 공유 여부 (이 시리즈 1편)
 
 읽을 때 주의할 점이 몇 가지 있다.
 - `head_dim`이 없으면 `hidden_size ÷ num_attention_heads`다. 따로 적은 모델은 이 관계가 깨질 수 있다. Qwen3-235B는 64 × 128 = 8,192로 d = 4,096보다 크고, gpt-oss-120b는 64 × 64 = 4,096으로 d = 2,880보다 크다.
