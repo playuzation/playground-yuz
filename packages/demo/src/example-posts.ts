@@ -112,6 +112,19 @@ import quant12 from './posts/quantization/12-kv-cache-activation-fp8.md';
 import quant13 from './posts/quantization/13-qat-qlora-bitnet.md';
 import quant14 from './posts/quantization/14-gguf.md';
 import quant15 from './posts/quantization/15-cpu-offload.md';
+import abs1 from './posts/abstraction/1-transistor.md';
+import abs2 from './posts/abstraction/2-logic-gates.md';
+import abs3 from './posts/abstraction/3-combinational-circuits.md';
+import abs4 from './posts/abstraction/4-sequential-circuits.md';
+import abs5 from './posts/abstraction/5-cpu.md';
+import abs6 from './posts/abstraction/6-instruction-set.md';
+import abs7 from './posts/abstraction/7-performance.md';
+import abs8 from './posts/abstraction/8-assembler.md';
+import abs9 from './posts/abstraction/9-compiler.md';
+import abs10 from './posts/abstraction/10-operating-system.md';
+import abs11 from './posts/abstraction/11-language-evolution.md';
+import abs12 from './posts/abstraction/12-code-language-models.md';
+import abs13 from './posts/abstraction/13-ai-agents.md';
 import { parsePost } from './parse-post.ts';
 
 export const examplePosts = [
@@ -228,4 +241,17 @@ export const examplePosts = [
   quant13,
   quant14,
   quant15,
+  abs1,
+  abs2,
+  abs3,
+  abs4,
+  abs5,
+  abs6,
+  abs7,
+  abs8,
+  abs9,
+  abs10,
+  abs11,
+  abs12,
+  abs13,
 ].map(parsePost);

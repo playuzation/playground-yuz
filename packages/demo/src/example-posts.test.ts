@@ -19,6 +19,7 @@ const filesOf = (dir: string) =>
 test('모든 예시 포스트가 example-posts.ts에 등록되어 있다', () => {
   const index = readFileSync(new URL('./example-posts.ts', import.meta.url), 'utf8');
   assert.deepEqual(series, [
+    'abstraction',
     'ai',
     'attention',
     'calculus',

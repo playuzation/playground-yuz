@@ -18,4 +18,5 @@ export const SERIES: SeriesInfo[] = [
   { name: '신경망 레이어', slug: 'layers', description: '선형·합성곱·순환 층에서 트랜스포머, MoE, 맘바, Gated DeltaNet까지' },
   { name: '오픈 웨이트 모델', slug: 'openweight', description: '라마, 젬마, 딥시크, Qwen 같은 공개 모델이 레이어를 조합하는 방식' },
   { name: '양자화', slug: 'quantization', description: '수 형식과 분포, 임베딩·잠재 공간, 양자화로 지식이 사라지는 이유, GPTQ·AWQ부터 QAT까지' },
+  { name: '트랜지스터에서 자연어까지', slug: 'abstraction', description: '트랜지스터와 논리 회로, CPU와 기계어, 어셈블러·컴파일러·운영체제, 고수준 언어를 지나 자연어 프로그래밍까지 층마다 일어나는 변환' },
 ];
