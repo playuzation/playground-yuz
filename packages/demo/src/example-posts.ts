@@ -97,6 +97,19 @@ import ow2 from './posts/openweight/2-long-context-attention-layouts.md';
 import ow3 from './posts/openweight/3-moe-models.md';
 import ow4 from './posts/openweight/4-hybrid-models.md';
 import ow5 from './posts/openweight/5-reading-config-json.md';
+import quant1 from './posts/quantization/1-quantization-basics.md';
+import quant2 from './posts/quantization/2-number-formats.md';
+import quant3 from './posts/quantization/3-weight-activation-distributions.md';
+import quant4 from './posts/quantization/4-error-propagation.md';
+import quant5 from './posts/quantization/5-embedding-space.md';
+import quant6 from './posts/quantization/6-latent-space-superposition.md';
+import quant7 from './posts/quantization/7-knowledge-capacity-bits.md';
+import quant8 from './posts/quantization/8-long-tail-knowledge.md';
+import quant9 from './posts/quantization/9-post-training-quantization.md';
+import quant10 from './posts/quantization/10-outlier-handling.md';
+import quant11 from './posts/quantization/11-gptq-awq.md';
+import quant12 from './posts/quantization/12-kv-cache-activation-fp8.md';
+import quant13 from './posts/quantization/13-qat-qlora-bitnet.md';
 import { parsePost } from './parse-post.ts';
 
 export const examplePosts = [
@@ -198,4 +211,17 @@ export const examplePosts = [
   ow3,
   ow4,
   ow5,
+  quant1,
+  quant2,
+  quant3,
+  quant4,
+  quant5,
+  quant6,
+  quant7,
+  quant8,
+  quant9,
+  quant10,
+  quant11,
+  quant12,
+  quant13,
 ].map(parsePost);
