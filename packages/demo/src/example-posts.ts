@@ -110,6 +110,8 @@ import quant10 from './posts/quantization/10-outlier-handling.md';
 import quant11 from './posts/quantization/11-gptq-awq.md';
 import quant12 from './posts/quantization/12-kv-cache-activation-fp8.md';
 import quant13 from './posts/quantization/13-qat-qlora-bitnet.md';
+import quant14 from './posts/quantization/14-gguf.md';
+import quant15 from './posts/quantization/15-cpu-offload.md';
 import { parsePost } from './parse-post.ts';
 
 export const examplePosts = [
@@ -224,4 +226,6 @@ export const examplePosts = [
   quant11,
   quant12,
   quant13,
+  quant14,
+  quant15,
 ].map(parsePost);
