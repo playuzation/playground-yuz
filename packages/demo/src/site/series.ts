@@ -17,4 +17,5 @@ export const SERIES: SeriesInfo[] = [
   { name: '어텐션', slug: 'attention', description: '어텐션의 기본부터 RoPE, KV 캐시, 리니어·플래시·세이지 어텐션까지' },
   { name: '신경망 레이어', slug: 'layers', description: '선형·합성곱·순환 층에서 트랜스포머, MoE, 맘바, Gated DeltaNet까지' },
   { name: '오픈 웨이트 모델', slug: 'openweight', description: '라마, 젬마, 딥시크, Qwen 같은 공개 모델이 레이어를 조합하는 방식' },
+  { name: '양자화', slug: 'quantization', description: '수 형식과 분포, 임베딩·잠재 공간, 양자화로 지식이 사라지는 이유, GPTQ·AWQ부터 QAT까지' },
 ];
