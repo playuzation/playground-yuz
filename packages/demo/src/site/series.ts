@@ -19,4 +19,11 @@ export const SERIES: SeriesInfo[] = [
   { name: '오픈 웨이트 모델', slug: 'openweight', description: '라마, 젬마, 딥시크, Qwen 같은 공개 모델이 레이어를 조합하는 방식' },
   { name: '양자화', slug: 'quantization', description: '수 형식과 분포, 임베딩·잠재 공간, 양자화로 지식이 사라지는 이유, GPTQ·AWQ부터 QAT까지' },
   { name: '트랜지스터에서 자연어까지', slug: 'abstraction', description: '트랜지스터와 논리 회로, CPU와 기계어, 어셈블러·컴파일러·운영체제, 고수준 언어를 지나 자연어 프로그래밍까지 층마다 일어나는 변환' },
+  { name: '알고리즘 기법', slug: 'techniques', description: '복잡도 어림, 백트래킹, 매개 변수 탐색, 투 포인터, 슬라이딩 윈도우, 누적 합, 그리디, 분할 정복, 단조 스택, 스위핑, 비트마스킹, 중간에서 만나기, Mo\'s, 무작위 알고리즘' },
+  { name: '동적 계획법', slug: 'dp', description: '배낭, LIS, LCS·편집 거리, 구간·비트마스크·트리·자릿수·기댓값 DP, 볼록 껍질 트릭, 분할 정복·크누스 최적화, SOS DP' },
+  { name: '고급 자료 구조', slug: 'datastructures', description: '힙, 유니온 파인드, 세그먼트 트리와 레이지 전파, 펜윅 트리, 희소 테이블, 트라이, 트립, 퍼시스턴트 세그먼트 트리, LCA, HLD, 센트로이드 분할' },
+  { name: '그래프 알고리즘', slug: 'graph', description: '0-1 BFS, 최단 경로, 최소 신장 트리, SCC와 2-SAT, 단절점, 오일러 경로, 네트워크 플로우·이분 매칭·최소 비용 유량' },
+  { name: '문자열 알고리즘', slug: 'strings', description: '문자열 해싱, KMP, Z 알고리즘, 아호-코라식, 접미사 배열, Manacher' },
+  { name: '수학·기하 알고리즘', slug: 'mathgeo', description: '확장 유클리드, 체, 행렬 거듭제곱, 중국인의 나머지 정리, 뤼카, 밀러-라빈, FFT, 가우스 소거, CCW, 볼록 껍질, 스프라그-그런디' },
+  { name: '게임 자원 관리', slug: 'gameres', description: '프레임 예산, 오브젝트 풀링, 메모리 할당자, 캐시 교체, 에셋 스트리밍, 공간 분할, 컬링·LOD, 시간 분할, 경로 탐색, 아틀라스 패킹, 대역폭 절약' },
 ];

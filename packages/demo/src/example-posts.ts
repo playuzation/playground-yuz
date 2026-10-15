@@ -125,6 +125,90 @@ import abs10 from './posts/abstraction/10-operating-system.md';
 import abs11 from './posts/abstraction/11-language-evolution.md';
 import abs12 from './posts/abstraction/12-code-language-models.md';
 import abs13 from './posts/abstraction/13-ai-agents.md';
+import tech1 from './posts/techniques/1-choosing-by-input-size.md';
+import tech2 from './posts/techniques/2-brute-force-backtracking.md';
+import tech3 from './posts/techniques/3-binary-search-parametric.md';
+import tech4 from './posts/techniques/4-two-pointers.md';
+import tech5 from './posts/techniques/5-sliding-window-monotonic-deque.md';
+import tech6 from './posts/techniques/6-prefix-sum-difference-array.md';
+import tech7 from './posts/techniques/7-greedy.md';
+import tech8 from './posts/techniques/8-divide-and-conquer.md';
+import tech9 from './posts/techniques/9-monotonic-stack.md';
+import tech10 from './posts/techniques/10-coordinate-compression-and-sweeping.md';
+import tech11 from './posts/techniques/11-bitmasking.md';
+import tech12 from './posts/techniques/12-meet-in-the-middle.md';
+import tech13 from './posts/techniques/13-sqrt-decomposition-and-mo.md';
+import tech14 from './posts/techniques/14-randomized-algorithms.md';
+import dp1 from './posts/dp/1-dp-basics.md';
+import dp2 from './posts/dp/2-knapsack.md';
+import dp3 from './posts/dp/3-lis.md';
+import dp4 from './posts/dp/4-lcs-edit-distance.md';
+import dp5 from './posts/dp/5-interval-dp.md';
+import dp6 from './posts/dp/6-bitmask-dp-tsp.md';
+import dp7 from './posts/dp/7-tree-dp.md';
+import dp8 from './posts/dp/8-digit-dp.md';
+import dp9 from './posts/dp/9-expectation-dp.md';
+import dp10 from './posts/dp/10-convex-hull-trick.md';
+import dp11 from './posts/dp/11-divide-conquer-and-knuth-optimization.md';
+import dp12 from './posts/dp/12-sum-over-subsets-dp.md';
+import ds1 from './posts/datastructures/1-heap-priority-queue.md';
+import ds2 from './posts/datastructures/2-union-find.md';
+import ds3 from './posts/datastructures/3-segment-tree.md';
+import ds4 from './posts/datastructures/4-lazy-segment-tree.md';
+import ds5 from './posts/datastructures/5-fenwick-tree.md';
+import ds6 from './posts/datastructures/6-sparse-table.md';
+import ds7 from './posts/datastructures/7-trie.md';
+import ds8 from './posts/datastructures/8-treap.md';
+import ds9 from './posts/datastructures/9-persistent-segment-tree.md';
+import ds10 from './posts/datastructures/10-lowest-common-ancestor.md';
+import ds11 from './posts/datastructures/11-euler-tour-hld.md';
+import ds12 from './posts/datastructures/12-centroid-decomposition.md';
+import graph1 from './posts/graph/1-bfs-applications.md';
+import graph2 from './posts/graph/2-dijkstra.md';
+import graph3 from './posts/graph/3-bellman-ford.md';
+import graph4 from './posts/graph/4-floyd-warshall.md';
+import graph5 from './posts/graph/5-minimum-spanning-tree.md';
+import graph6 from './posts/graph/6-strongly-connected-components.md';
+import graph7 from './posts/graph/7-2-sat.md';
+import graph8 from './posts/graph/8-articulation-points-and-bridges.md';
+import graph9 from './posts/graph/9-euler-path.md';
+import graph10 from './posts/graph/10-network-flow-ford-fulkerson.md';
+import graph11 from './posts/graph/11-dinic-and-max-flow-min-cut.md';
+import graph12 from './posts/graph/12-bipartite-matching.md';
+import graph13 from './posts/graph/13-min-cost-max-flow.md';
+import graph14 from './posts/graph/14-flow-modeling.md';
+import str1 from './posts/strings/1-string-hashing-rabin-karp.md';
+import str2 from './posts/strings/2-kmp.md';
+import str3 from './posts/strings/3-z-algorithm.md';
+import str4 from './posts/strings/4-aho-corasick.md';
+import str5 from './posts/strings/5-suffix-array-lcp.md';
+import str6 from './posts/strings/6-manacher.md';
+import mg1 from './posts/mathgeo/1-euclid-and-modular-inverse.md';
+import mg2 from './posts/mathgeo/2-prime-sieves-and-euler-phi.md';
+import mg3 from './posts/mathgeo/3-fast-and-matrix-exponentiation.md';
+import mg4 from './posts/mathgeo/4-chinese-remainder-theorem.md';
+import mg5 from './posts/mathgeo/5-binomial-mod-fermat-lucas.md';
+import mg6 from './posts/mathgeo/6-miller-rabin-and-pollard-rho.md';
+import mg7 from './posts/mathgeo/7-fft-and-ntt.md';
+import mg8 from './posts/mathgeo/8-gaussian-elimination.md';
+import mg9 from './posts/mathgeo/9-ccw-and-segment-intersection.md';
+import mg10 from './posts/mathgeo/10-convex-hull.md';
+import mg11 from './posts/mathgeo/11-polygon-area-and-rotating-calipers.md';
+import mg12 from './posts/mathgeo/12-nim-and-sprague-grundy.md';
+import game1 from './posts/gameres/1-frame-budget.md';
+import game2 from './posts/gameres/2-object-pooling.md';
+import game3 from './posts/gameres/3-memory-allocators.md';
+import game4 from './posts/gameres/4-buddy-and-slab.md';
+import game5 from './posts/gameres/5-cache-replacement.md';
+import game6 from './posts/gameres/6-asset-streaming.md';
+import game7 from './posts/gameres/7-uniform-grid-spatial-hashing.md';
+import game8 from './posts/gameres/8-quadtree-and-bvh.md';
+import game9 from './posts/gameres/9-culling-and-lod.md';
+import game10 from './posts/gameres/10-time-slicing.md';
+import game11 from './posts/gameres/11-efficient-pathfinding.md';
+import game12 from './posts/gameres/12-texture-atlas-bin-packing.md';
+import game13 from './posts/gameres/13-flyweight-and-dirty-flag.md';
+import game14 from './posts/gameres/14-network-bandwidth.md';
 import { parsePost } from './parse-post.ts';
 
 export const examplePosts = [
@@ -254,4 +338,88 @@ export const examplePosts = [
   abs11,
   abs12,
   abs13,
+  tech1,
+  tech2,
+  tech3,
+  tech4,
+  tech5,
+  tech6,
+  tech7,
+  tech8,
+  tech9,
+  tech10,
+  tech11,
+  tech12,
+  tech13,
+  tech14,
+  dp1,
+  dp2,
+  dp3,
+  dp4,
+  dp5,
+  dp6,
+  dp7,
+  dp8,
+  dp9,
+  dp10,
+  dp11,
+  dp12,
+  ds1,
+  ds2,
+  ds3,
+  ds4,
+  ds5,
+  ds6,
+  ds7,
+  ds8,
+  ds9,
+  ds10,
+  ds11,
+  ds12,
+  graph1,
+  graph2,
+  graph3,
+  graph4,
+  graph5,
+  graph6,
+  graph7,
+  graph8,
+  graph9,
+  graph10,
+  graph11,
+  graph12,
+  graph13,
+  graph14,
+  str1,
+  str2,
+  str3,
+  str4,
+  str5,
+  str6,
+  mg1,
+  mg2,
+  mg3,
+  mg4,
+  mg5,
+  mg6,
+  mg7,
+  mg8,
+  mg9,
+  mg10,
+  mg11,
+  mg12,
+  game1,
+  game2,
+  game3,
+  game4,
+  game5,
+  game6,
+  game7,
+  game8,
+  game9,
+  game10,
+  game11,
+  game12,
+  game13,
+  game14,
 ].map(parsePost);
