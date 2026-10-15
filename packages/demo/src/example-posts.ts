@@ -223,6 +223,27 @@ import adv11 from './posts/advanced/11-dominator-tree.md';
 import adv12 from './posts/advanced/12-global-min-cut.md';
 import adv13 from './posts/advanced/13-linear-recurrence.md';
 import adv14 from './posts/advanced/14-linear-programming-simplex.md';
+import adt1 from './posts/adt/1-abstract-data-types.md';
+import adt2 from './posts/adt/2-two-stack-queue.md';
+import adt3 from './posts/adt/3-double-ended-priority-queue.md';
+import adt4 from './posts/adt/4-leftist-skew-heap.md';
+import adt5 from './posts/adt/5-binomial-pairing-heap.md';
+import adt6 from './posts/adt/6-fibonacci-heap.md';
+import adt7 from './posts/adt/7-avl-tree.md';
+import adt8 from './posts/adt/8-red-black-tree.md';
+import adt9 from './posts/adt/9-b-tree.md';
+import adt10 from './posts/adt/10-skip-list.md';
+import adt11 from './posts/adt/11-scapegoat-tree.md';
+import adt12 from './posts/adt/12-augmented-tree.md';
+import adt13 from './posts/adt/13-kd-tree.md';
+import adt14 from './posts/adt/14-radix-patricia.md';
+import adt15 from './posts/adt/15-van-emde-boas-tree.md';
+import adt16 from './posts/adt/16-hash-tables.md';
+import adt17 from './posts/adt/17-bloom-and-cuckoo-filters.md';
+import adt18 from './posts/adt/18-stream-sketches.md';
+import adt19 from './posts/adt/19-persistent-data-structures.md';
+import adt20 from './posts/adt/20-rope-and-finger-tree.md';
+import adt21 from './posts/adt/21-lsm-tree.md';
 import { parsePost } from './parse-post.ts';
 
 export const examplePosts = [
@@ -450,4 +471,25 @@ export const examplePosts = [
   adv12,
   adv13,
   adv14,
+  adt1,
+  adt2,
+  adt3,
+  adt4,
+  adt5,
+  adt6,
+  adt7,
+  adt8,
+  adt9,
+  adt10,
+  adt11,
+  adt12,
+  adt13,
+  adt14,
+  adt15,
+  adt16,
+  adt17,
+  adt18,
+  adt19,
+  adt20,
+  adt21,
 ].map(parsePost);
