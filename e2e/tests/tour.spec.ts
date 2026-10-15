@@ -5,10 +5,14 @@ import { fileURLToPath } from 'node:url';
 import { createPost, goHome, signup, uniqueName } from './helpers.ts';
 
 const dir = fileURLToPath(new URL('../screenshots', import.meta.url));
+// 데모 홈은 예시 포스트가 수백 개라 전체를 찍으면 수만 px짜리 이미지가 되고 몇 초씩 걸린다. 위쪽만 남긴다.
+const MAX_HEIGHT = 4000;
 
 async function shot(page: Page, testInfo: TestInfo, name: string) {
   const path = `${dir}/${testInfo.project.name}/${name}.png`;
-  await page.screenshot({ path, fullPage: true });
+  const width = page.viewportSize()!.width;
+  const height = Math.min(await page.evaluate(() => document.documentElement.scrollHeight), MAX_HEIGHT);
+  await page.screenshot({ path, fullPage: true, clip: { x: 0, y: 0, width, height } });
   await testInfo.attach(name, { path, contentType: 'image/png' });
 }
 
