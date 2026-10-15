@@ -19,17 +19,28 @@ const filesOf = (dir: string) =>
 test('모든 예시 포스트가 example-posts.ts에 등록되어 있다', () => {
   const index = readFileSync(new URL('./example-posts.ts', import.meta.url), 'utf8');
   assert.deepEqual(series, [
+    'abstraction',
+    'adt',
+    'advanced',
     'ai',
     'attention',
     'calculus',
+    'datastructures',
     'discrete',
+    'dp',
+    'gameres',
+    'graph',
     'infotheory',
     'lang',
     'layers',
     'linalg',
+    'mathgeo',
     'openweight',
     'probability',
+    'quantization',
     'statistics',
+    'strings',
+    'techniques',
   ]);
   for (const dir of series) {
     for (const file of filesOf(dir)) assert.ok(index.includes(`./posts/${dir}/${file}`), `${dir}/${file} 미등록`);
