@@ -209,6 +209,20 @@ import game11 from './posts/gameres/11-efficient-pathfinding.md';
 import game12 from './posts/gameres/12-texture-atlas-bin-packing.md';
 import game13 from './posts/gameres/13-flyweight-and-dirty-flag.md';
 import game14 from './posts/gameres/14-network-bandwidth.md';
+import adv1 from './posts/advanced/1-splay-tree.md';
+import adv2 from './posts/advanced/2-link-cut-tree.md';
+import adv3 from './posts/advanced/3-wavelet-tree.md';
+import adv4 from './posts/advanced/4-parallel-binary-search-cdq.md';
+import adv5 from './posts/advanced/5-offline-dynamic-connectivity.md';
+import adv6 from './posts/advanced/6-slope-trick.md';
+import adv7 from './posts/advanced/7-aliens-trick.md';
+import adv8 from './posts/advanced/8-suffix-automaton.md';
+import adv9 from './posts/advanced/9-hungarian-algorithm.md';
+import adv10 from './posts/advanced/10-blossom-algorithm.md';
+import adv11 from './posts/advanced/11-dominator-tree.md';
+import adv12 from './posts/advanced/12-global-min-cut.md';
+import adv13 from './posts/advanced/13-linear-recurrence.md';
+import adv14 from './posts/advanced/14-linear-programming-simplex.md';
 import { parsePost } from './parse-post.ts';
 
 export const examplePosts = [
@@ -422,4 +436,18 @@ export const examplePosts = [
   game12,
   game13,
   game14,
+  adv1,
+  adv2,
+  adv3,
+  adv4,
+  adv5,
+  adv6,
+  adv7,
+  adv8,
+  adv9,
+  adv10,
+  adv11,
+  adv12,
+  adv13,
+  adv14,
 ].map(parsePost);

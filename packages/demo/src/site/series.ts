@@ -26,4 +26,5 @@ export const SERIES: SeriesInfo[] = [
   { name: '문자열 알고리즘', slug: 'strings', description: '문자열 해싱, KMP, Z 알고리즘, 아호-코라식, 접미사 배열, Manacher' },
   { name: '수학·기하 알고리즘', slug: 'mathgeo', description: '확장 유클리드, 체, 행렬 거듭제곱, 중국인의 나머지 정리, 뤼카, 밀러-라빈, FFT, 가우스 소거, CCW, 볼록 껍질, 스프라그-그런디' },
   { name: '게임 자원 관리', slug: 'gameres', description: '프레임 예산, 오브젝트 풀링, 메모리 할당자, 캐시 교체, 에셋 스트리밍, 공간 분할, 컬링·LOD, 시간 분할, 경로 탐색, 아틀라스 패킹, 대역폭 절약' },
+  { name: '심화 알고리즘', slug: 'advanced', description: '스플레이·링크-컷 트리, 웨이블릿 트리, 병렬 이분 탐색·CDQ, 오프라인 동적 연결성, 슬로프 트릭, Aliens 트릭, 접미사 오토마톤, 헝가리안, 꽃 알고리즘, 지배자 트리, 전역 최소 컷, 벌레캄프-매시, 심플렉스' },
 ];
