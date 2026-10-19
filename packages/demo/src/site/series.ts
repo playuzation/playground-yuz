@@ -32,4 +32,5 @@ export const SERIES: SeriesInfo[] = [
   { name: '메모리 시스템', slug: 'memory', description: '메모리 계층, SRAM 캐시 구조와 미스, 캐시를 아는 코드, DRAM 뱅크와 행 버퍼, DDR과 메모리 컨트롤러, TLB와 페이지 테이블 워크, HBM·GDDR, 플래시와 FTL, ECC' },
   { name: 'GPU와 CUDA', slug: 'gpu', description: 'GPU 구조(SM·워프·텐서 코어), SIMT, CUDA 프로그래밍 모델과 메모리 계층, 병합 접근, 뱅크 충돌, 점유율, 리덕션, 행렬 곱 최적화, 스트림, 루프라인, 멀티 GPU 통신' },
   { name: '게임 셰이더', slug: 'shader', description: '렌더링 파이프라인, 좌표 변환, 래스터화와 보간, GLSL과 절차적 패턴, 텍스처 샘플링, 조명 모델, 법선 맵, PBR, 이미지 기반 조명, 감마와 톤 매핑, 그림자, 투명도, 정점 애니메이션, 포스트 프로세싱, 디퍼드·포워드+, 셰이더 성능' },
+  { name: '레벨 디자인과 콘텐츠 제공', slug: 'leveldesign', description: '플레이어 메트릭, 동선과 시야, 레벨 그래프, 열쇠와 자물쇠, 페이싱, 온보딩, 전투 공간, 동적 난이도, 절차적 생성(BSP·셀룰러 오토마타·WFC), 진행과 보상, 확률형 보상, 게임 경제, 라이브 서비스, 텔레메트리, 콘텐츠 파이프라인' },
 ];

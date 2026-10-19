@@ -296,6 +296,22 @@ import shd13 from './posts/shader/13-vertex-animation.md';
 import shd14 from './posts/shader/14-post-processing.md';
 import shd15 from './posts/shader/15-many-lights.md';
 import shd16 from './posts/shader/16-shader-performance.md';
+import lvl1 from './posts/leveldesign/1-what-is-level-design.md';
+import lvl2 from './posts/leveldesign/2-guiding-the-player.md';
+import lvl3 from './posts/leveldesign/3-level-as-graph.md';
+import lvl4 from './posts/leveldesign/4-locks-and-keys.md';
+import lvl5 from './posts/leveldesign/5-pacing-and-difficulty-curve.md';
+import lvl6 from './posts/leveldesign/6-tutorial-and-onboarding.md';
+import lvl7 from './posts/leveldesign/7-combat-space-design.md';
+import lvl8 from './posts/leveldesign/8-player-model-and-dda.md';
+import lvl9 from './posts/leveldesign/9-dungeon-and-cave-generation.md';
+import lvl10 from './posts/leveldesign/10-wave-function-collapse-and-grammars.md';
+import lvl11 from './posts/leveldesign/11-progression-systems.md';
+import lvl12 from './posts/leveldesign/12-probabilistic-rewards.md';
+import lvl13 from './posts/leveldesign/13-game-economy.md';
+import lvl14 from './posts/leveldesign/14-live-service-battle-pass.md';
+import lvl15 from './posts/leveldesign/15-telemetry-funnel-ab.md';
+import lvl16 from './posts/leveldesign/16-content-pipeline.md';
 import { parsePost } from './parse-post.ts';
 
 export const examplePosts = [
@@ -596,4 +612,20 @@ export const examplePosts = [
   shd14,
   shd15,
   shd16,
+  lvl1,
+  lvl2,
+  lvl3,
+  lvl4,
+  lvl5,
+  lvl6,
+  lvl7,
+  lvl8,
+  lvl9,
+  lvl10,
+  lvl11,
+  lvl12,
+  lvl13,
+  lvl14,
+  lvl15,
+  lvl16,
 ].map(parsePost);

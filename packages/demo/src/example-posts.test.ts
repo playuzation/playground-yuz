@@ -35,6 +35,7 @@ test('모든 예시 포스트가 example-posts.ts에 등록되어 있다', () =>
     'infotheory',
     'lang',
     'layers',
+    'leveldesign',
     'linalg',
     'mathgeo',
     'memory',
