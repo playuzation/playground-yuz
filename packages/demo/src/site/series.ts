@@ -28,4 +28,7 @@ export const SERIES: SeriesInfo[] = [
   { name: '게임 자원 관리', slug: 'gameres', description: '프레임 예산, 오브젝트 풀링, 메모리 할당자, 캐시 교체, 에셋 스트리밍, 공간 분할, 컬링·LOD, 시간 분할, 경로 탐색, 아틀라스 패킹, 대역폭 절약' },
   { name: '심화 알고리즘', slug: 'advanced', description: '스플레이·링크-컷 트리, 웨이블릿 트리, 병렬 이분 탐색·CDQ, 오프라인 동적 연결성, 슬로프 트릭, Aliens 트릭, 접미사 오토마톤, 헝가리안, 꽃 알고리즘, 지배자 트리, 전역 최소 컷, 벌레캄프-매시, 심플렉스' },
   { name: '추상 데이터 타입 심화', slug: 'adt', description: '스택 두 개 큐, 이중·병합 가능·피보나치 힙, AVL·레드-블랙·B-트리, 스킵 리스트, 희생양 트리, 순위 통계·구간 트리, k-d 트리, 기수 트리, 반 엠데 보아스, 해시 테이블, 블룸 필터, 스트림 요약, 퍼시스턴트 구조, 로프·핑거 트리, LSM 트리' },
+  { name: 'CPU 마이크로아키텍처', slug: 'cpu', description: '파이프라인 해저드, 분기 예측, 비순차 실행과 재정렬 버퍼, 마이크로 연산 해독, 실행 포트, SIMD, 캐시 일관성, 메모리 일관성 모델, SMT·NUMA, 전력과 클록' },
+  { name: '메모리 시스템', slug: 'memory', description: '메모리 계층, SRAM 캐시 구조와 미스, 캐시를 아는 코드, DRAM 뱅크와 행 버퍼, DDR과 메모리 컨트롤러, TLB와 페이지 테이블 워크, HBM·GDDR, 플래시와 FTL, ECC' },
+  { name: 'GPU와 CUDA', slug: 'gpu', description: 'GPU 구조(SM·워프·텐서 코어), SIMT, CUDA 프로그래밍 모델과 메모리 계층, 병합 접근, 뱅크 충돌, 점유율, 리덕션, 행렬 곱 최적화, 스트림, 루프라인, 멀티 GPU 통신' },
 ];

@@ -244,6 +244,42 @@ import adt18 from './posts/adt/18-stream-sketches.md';
 import adt19 from './posts/adt/19-persistent-data-structures.md';
 import adt20 from './posts/adt/20-rope-and-finger-tree.md';
 import adt21 from './posts/adt/21-lsm-tree.md';
+import cpu1 from './posts/cpu/1-microarchitecture-map.md';
+import cpu2 from './posts/cpu/2-pipeline-hazards.md';
+import cpu3 from './posts/cpu/3-branch-prediction.md';
+import cpu4 from './posts/cpu/4-out-of-order-tomasulo.md';
+import cpu5 from './posts/cpu/5-reorder-buffer-speculation.md';
+import cpu6 from './posts/cpu/6-decode-and-micro-ops.md';
+import cpu7 from './posts/cpu/7-execution-units-and-ports.md';
+import cpu8 from './posts/cpu/8-simd-and-vector-instructions.md';
+import cpu9 from './posts/cpu/9-cache-coherence-mesi.md';
+import cpu10 from './posts/cpu/10-memory-consistency-and-atomics.md';
+import cpu11 from './posts/cpu/11-multicore-smt-numa.md';
+import cpu12 from './posts/cpu/12-power-and-clock.md';
+import mem1 from './posts/memory/1-memory-hierarchy.md';
+import mem2 from './posts/memory/2-sram-and-cache-structure.md';
+import mem3 from './posts/memory/3-cache-misses-and-policies.md';
+import mem4 from './posts/memory/4-cache-aware-code.md';
+import mem5 from './posts/memory/5-dram-structure.md';
+import mem6 from './posts/memory/6-ddr-and-memory-controller.md';
+import mem7 from './posts/memory/7-page-table-walk-and-tlb.md';
+import mem8 from './posts/memory/8-hbm-and-gddr.md';
+import mem9 from './posts/memory/9-nand-flash-and-ftl.md';
+import mem10 from './posts/memory/10-ecc-hamming-rowhammer.md';
+import gpu1 from './posts/gpu/1-throughput-machine.md';
+import gpu2 from './posts/gpu/2-gpu-hardware.md';
+import gpu3 from './posts/gpu/3-simt-and-warps.md';
+import gpu4 from './posts/gpu/4-cuda-programming-model.md';
+import gpu5 from './posts/gpu/5-cuda-memory-hierarchy.md';
+import gpu6 from './posts/gpu/6-memory-coalescing.md';
+import gpu7 from './posts/gpu/7-shared-memory-bank-conflicts.md';
+import gpu8 from './posts/gpu/8-occupancy.md';
+import gpu9 from './posts/gpu/9-parallel-reduction.md';
+import gpu10 from './posts/gpu/10-matmul-kernel.md';
+import gpu11 from './posts/gpu/11-tensor-cores.md';
+import gpu12 from './posts/gpu/12-streams-async.md';
+import gpu13 from './posts/gpu/13-roofline-profiling.md';
+import gpu14 from './posts/gpu/14-multi-gpu-collectives.md';
 import { parsePost } from './parse-post.ts';
 
 export const examplePosts = [
@@ -492,4 +528,40 @@ export const examplePosts = [
   adt19,
   adt20,
   adt21,
+  cpu1,
+  cpu2,
+  cpu3,
+  cpu4,
+  cpu5,
+  cpu6,
+  cpu7,
+  cpu8,
+  cpu9,
+  cpu10,
+  cpu11,
+  cpu12,
+  mem1,
+  mem2,
+  mem3,
+  mem4,
+  mem5,
+  mem6,
+  mem7,
+  mem8,
+  mem9,
+  mem10,
+  gpu1,
+  gpu2,
+  gpu3,
+  gpu4,
+  gpu5,
+  gpu6,
+  gpu7,
+  gpu8,
+  gpu9,
+  gpu10,
+  gpu11,
+  gpu12,
+  gpu13,
+  gpu14,
 ].map(parsePost);
