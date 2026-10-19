@@ -280,6 +280,22 @@ import gpu11 from './posts/gpu/11-tensor-cores.md';
 import gpu12 from './posts/gpu/12-streams-async.md';
 import gpu13 from './posts/gpu/13-roofline-profiling.md';
 import gpu14 from './posts/gpu/14-multi-gpu-collectives.md';
+import shd1 from './posts/shader/1-rendering-pipeline.md';
+import shd2 from './posts/shader/2-vertex-transforms.md';
+import shd3 from './posts/shader/3-rasterization-interpolation.md';
+import shd4 from './posts/shader/4-glsl-procedural-patterns.md';
+import shd5 from './posts/shader/5-texture-sampling.md';
+import shd6 from './posts/shader/6-classic-lighting.md';
+import shd7 from './posts/shader/7-normal-maps-tangent-space.md';
+import shd8 from './posts/shader/8-pbr-microfacet-ggx.md';
+import shd9 from './posts/shader/9-image-based-lighting.md';
+import shd10 from './posts/shader/10-gamma-hdr-tone-mapping.md';
+import shd11 from './posts/shader/11-shadow-mapping.md';
+import shd12 from './posts/shader/12-transparency-blending.md';
+import shd13 from './posts/shader/13-vertex-animation.md';
+import shd14 from './posts/shader/14-post-processing.md';
+import shd15 from './posts/shader/15-many-lights.md';
+import shd16 from './posts/shader/16-shader-performance.md';
 import { parsePost } from './parse-post.ts';
 
 export const examplePosts = [
@@ -564,4 +580,20 @@ export const examplePosts = [
   gpu12,
   gpu13,
   gpu14,
+  shd1,
+  shd2,
+  shd3,
+  shd4,
+  shd5,
+  shd6,
+  shd7,
+  shd8,
+  shd9,
+  shd10,
+  shd11,
+  shd12,
+  shd13,
+  shd14,
+  shd15,
+  shd16,
 ].map(parsePost);
