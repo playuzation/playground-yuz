@@ -30,6 +30,8 @@ test('모든 예시 포스트가 example-posts.ts에 등록되어 있다', () =>
     'discrete',
     'dp',
     'gameres',
+    'git',
+    'github',
     'gpu',
     'graph',
     'infotheory',
@@ -46,6 +48,7 @@ test('모든 예시 포스트가 example-posts.ts에 등록되어 있다', () =>
     'statistics',
     'strings',
     'techniques',
+    'wsl',
   ]);
   for (const dir of series) {
     for (const file of filesOf(dir)) assert.ok(index.includes(`./posts/${dir}/${file}`), `${dir}/${file} 미등록`);

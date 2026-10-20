@@ -312,6 +312,42 @@ import lvl13 from './posts/leveldesign/13-game-economy.md';
 import lvl14 from './posts/leveldesign/14-live-service-battle-pass.md';
 import lvl15 from './posts/leveldesign/15-telemetry-funnel-ab.md';
 import lvl16 from './posts/leveldesign/16-content-pipeline.md';
+import wsl1 from './posts/wsl/1-what-is-wsl.md';
+import wsl2 from './posts/wsl/2-install-and-manage.md';
+import wsl3 from './posts/wsl/3-file-systems.md';
+import wsl4 from './posts/wsl/4-file-pitfalls.md';
+import wsl5 from './posts/wsl/5-interop.md';
+import wsl6 from './posts/wsl/6-wsl-conf-and-wslconfig.md';
+import wsl7 from './posts/wsl/7-networking.md';
+import wsl8 from './posts/wsl/8-systemd-and-services.md';
+import wsl9 from './posts/wsl/9-dev-tools.md';
+import wsl10 from './posts/wsl/10-troubleshooting.md';
+import git1 from './posts/git/1-what-is-git.md';
+import git2 from './posts/git/2-commit-basics.md';
+import git3 from './posts/git/3-git-objects.md';
+import git4 from './posts/git/4-branches-and-head.md';
+import git5 from './posts/git/5-merge.md';
+import git6 from './posts/git/6-rebase.md';
+import git7 from './posts/git/7-remote.md';
+import git8 from './posts/git/8-undo.md';
+import git9 from './posts/git/9-history.md';
+import git10 from './posts/git/10-stash-worktree-cherry-pick.md';
+import git11 from './posts/git/11-branching-strategies-and-tags.md';
+import git12 from './posts/git/12-large-repositories.md';
+import git13 from './posts/git/13-git-hooks.md';
+import git14 from './posts/git/14-config-signing-and-recovery.md';
+import gh1 from './posts/github/1-what-is-github.md';
+import gh2 from './posts/github/2-pull-requests-and-merge-methods.md';
+import gh3 from './posts/github/3-code-review-and-codeowners.md';
+import gh4 from './posts/github/4-issues-and-projects.md';
+import gh5 from './posts/github/5-branch-protection-rulesets.md';
+import gh6 from './posts/github/6-actions-workflows-events-jobs-steps.md';
+import gh7 from './posts/github/7-actions-matrix-cache-artifacts-reuse.md';
+import gh8 from './posts/github/8-actions-secrets-permissions-oidc.md';
+import gh9 from './posts/github/9-deployment-automation.md';
+import gh10 from './posts/github/10-dependency-and-security.md';
+import gh11 from './posts/github/11-gh-cli-and-api.md';
+import gh12 from './posts/github/12-open-source-maintenance.md';
 import { parsePost } from './parse-post.ts';
 
 export const examplePosts = [
@@ -628,4 +664,40 @@ export const examplePosts = [
   lvl14,
   lvl15,
   lvl16,
+  wsl1,
+  wsl2,
+  wsl3,
+  wsl4,
+  wsl5,
+  wsl6,
+  wsl7,
+  wsl8,
+  wsl9,
+  wsl10,
+  git1,
+  git2,
+  git3,
+  git4,
+  git5,
+  git6,
+  git7,
+  git8,
+  git9,
+  git10,
+  git11,
+  git12,
+  git13,
+  git14,
+  gh1,
+  gh2,
+  gh3,
+  gh4,
+  gh5,
+  gh6,
+  gh7,
+  gh8,
+  gh9,
+  gh10,
+  gh11,
+  gh12,
 ].map(parsePost);
