@@ -112,7 +112,7 @@ ${g.items.map((e) => `            <li><a href="${postPath(e)}">${escapeHtml(e.ti
     path: 'index.html',
     html: layout({
       title: 'Playground — 모바일로만 만든 토이 플랫폼',
-      description: '마크다운 포스트·좋아요·댓글 토이 플랫폼과 예시 포스트(언어, AI, 수학, 어텐션, 신경망 레이어, 오픈 웨이트 모델, 양자화, 트랜지스터에서 자연어까지, 알고리즘, 추상 데이터 타입, 하드웨어, 게임 셰이더, 레벨 디자인, WSL, Git, GitHub)를 로그인 없이 읽어 보세요.',
+      description: '마크다운 포스트·좋아요·댓글 토이 플랫폼과 예시 포스트(언어, AI, 수학, 어텐션, 신경망 레이어, 오픈 웨이트 모델, 양자화, 트랜지스터에서 자연어까지, 알고리즘, 추상 데이터 타입, 하드웨어, 게임 셰이더, 레벨 디자인, WSL, 도커, PostgreSQL, Git, GitHub)를 로그인 없이 읽어 보세요.',
       root: './',
       body,
     }),

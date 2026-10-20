@@ -322,6 +322,36 @@ import wsl7 from './posts/wsl/7-networking.md';
 import wsl8 from './posts/wsl/8-systemd-and-services.md';
 import wsl9 from './posts/wsl/9-dev-tools.md';
 import wsl10 from './posts/wsl/10-troubleshooting.md';
+import dock1 from './posts/docker/1-what-is-a-container.md';
+import dock2 from './posts/docker/2-images-and-layers.md';
+import dock3 from './posts/docker/3-container-lifecycle.md';
+import dock4 from './posts/docker/4-dockerfile-basics.md';
+import dock5 from './posts/docker/5-build-cache.md';
+import dock6 from './posts/docker/6-multi-stage-build.md';
+import dock7 from './posts/docker/7-volumes-and-bind-mounts.md';
+import dock8 from './posts/docker/8-container-networking.md';
+import dock9 from './posts/docker/9-docker-compose.md';
+import dock10 from './posts/docker/10-config-and-secrets.md';
+import dock11 from './posts/docker/11-container-security.md';
+import dock12 from './posts/docker/12-resources-observability.md';
+import dock13 from './posts/docker/13-image-distribution.md';
+import dock14 from './posts/docker/14-working-habits.md';
+import pg1 from './posts/postgres/1-getting-started.md';
+import pg2 from './posts/postgres/2-data-types.md';
+import pg3 from './posts/postgres/3-constraints.md';
+import pg4 from './posts/postgres/4-joins-and-aggregates.md';
+import pg5 from './posts/postgres/5-window-functions-cte.md';
+import pg6 from './posts/postgres/6-btree-index-explain.md';
+import pg7 from './posts/postgres/7-advanced-indexes.md';
+import pg8 from './posts/postgres/8-query-tuning.md';
+import pg9 from './posts/postgres/9-transactions-isolation.md';
+import pg10 from './posts/postgres/10-mvcc-vacuum.md';
+import pg11 from './posts/postgres/11-locks-concurrency.md';
+import pg12 from './posts/postgres/12-jsonb-full-text-search.md';
+import pg13 from './posts/postgres/13-schema-migration.md';
+import pg14 from './posts/postgres/14-backup-and-recovery.md';
+import pg15 from './posts/postgres/15-replication-and-ha.md';
+import pg16 from './posts/postgres/16-operations-and-security.md';
 import git1 from './posts/git/1-what-is-git.md';
 import git2 from './posts/git/2-commit-basics.md';
 import git3 from './posts/git/3-git-objects.md';
@@ -674,6 +704,36 @@ export const examplePosts = [
   wsl8,
   wsl9,
   wsl10,
+  dock1,
+  dock2,
+  dock3,
+  dock4,
+  dock5,
+  dock6,
+  dock7,
+  dock8,
+  dock9,
+  dock10,
+  dock11,
+  dock12,
+  dock13,
+  dock14,
+  pg1,
+  pg2,
+  pg3,
+  pg4,
+  pg5,
+  pg6,
+  pg7,
+  pg8,
+  pg9,
+  pg10,
+  pg11,
+  pg12,
+  pg13,
+  pg14,
+  pg15,
+  pg16,
   git1,
   git2,
   git3,
