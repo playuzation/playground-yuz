@@ -33,4 +33,9 @@ export const SERIES: SeriesInfo[] = [
   { name: 'GPU와 CUDA', slug: 'gpu', description: 'GPU 구조(SM·워프·텐서 코어), SIMT, CUDA 프로그래밍 모델과 메모리 계층, 병합 접근, 뱅크 충돌, 점유율, 리덕션, 행렬 곱 최적화, 스트림, 루프라인, 멀티 GPU 통신' },
   { name: '게임 셰이더', slug: 'shader', description: '렌더링 파이프라인, 좌표 변환, 래스터화와 보간, GLSL과 절차적 패턴, 텍스처 샘플링, 조명 모델, 법선 맵, PBR, 이미지 기반 조명, 감마와 톤 매핑, 그림자, 투명도, 정점 애니메이션, 포스트 프로세싱, 디퍼드·포워드+, 셰이더 성능' },
   { name: '레벨 디자인과 콘텐츠 제공', slug: 'leveldesign', description: '플레이어 메트릭, 동선과 시야, 레벨 그래프, 열쇠와 자물쇠, 페이싱, 온보딩, 전투 공간, 동적 난이도, 절차적 생성(BSP·셀룰러 오토마타·WFC), 진행과 보상, 확률형 보상, 게임 경제, 라이브 서비스, 텔레메트리, 콘텐츠 파이프라인' },
+  { name: 'WSL 개발 환경', slug: 'wsl', description: 'WSL 1과 WSL 2의 구조, 설치와 배포판 관리, ext4와 /mnt/c, 줄바꿈·권한·대소문자 함정, 상호 운용, wsl.conf와 .wslconfig, NAT·미러 네트워크, systemd, VS Code·도커·GPU, 디스크 회수와 문제 해결' },
+  { name: '도커와 컨테이너', slug: 'docker', description: '격리된 프로세스와 이미지, 레이어와 다이제스트, 생명 주기와 시그널, Dockerfile, 빌드 캐시, 멀티 스테이지, 볼륨, 네트워크, Compose, 설정과 비밀, 보안, 리소스 제한과 헬스 체크, 레지스트리와 태그 전략' },
+  { name: 'PostgreSQL 실무', slug: 'postgres', description: 'psql과 스키마, 자료형, 제약 조건, 조인과 집계, 윈도 함수와 CTE, B-트리와 실행 계획, GIN·GiST·BRIN, 쿼리 튜닝, 격리 수준, MVCC와 VACUUM, 락과 SKIP LOCKED, JSONB와 전문 검색, 마이그레이션, 백업과 시점 복구, 복제, 권한과 RLS' },
+  { name: 'Git 버전 관리', slug: 'git', description: '스냅숏과 세 영역, 블롭·트리·커밋 객체, 브랜치와 HEAD, 병합과 충돌, 리베이스, 원격과 force-with-lease, reset·revert·reflog, bisect, stash·worktree·cherry-pick, 브랜치 전략과 태그, 부분 클론과 LFS, 훅, 서명과 사고 복구' },
+  { name: 'GitHub 협업과 자동화', slug: 'github', description: '풀 리퀘스트와 세 가지 병합 방식, 코드 리뷰와 CODEOWNERS, 이슈와 프로젝트, 브랜치 보호와 규칙 세트, GitHub Actions(워크플로·매트릭스·캐시·보안), Pages·GHCR·릴리스 배포, Dependabot과 비밀 스캐닝, gh CLI와 API, 오픈 소스 운영' },
 ];
