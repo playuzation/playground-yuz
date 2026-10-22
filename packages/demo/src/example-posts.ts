@@ -378,6 +378,16 @@ import gh9 from './posts/github/9-deployment-automation.md';
 import gh10 from './posts/github/10-dependency-and-security.md';
 import gh11 from './posts/github/11-gh-cli-and-api.md';
 import gh12 from './posts/github/12-open-source-maintenance.md';
+import debt1 from './posts/aidebt/1-three-debts-map.md';
+import debt2 from './posts/aidebt/2-technical-debt-revisited.md';
+import debt3 from './posts/aidebt/3-llm-technical-debt-data.md';
+import debt4 from './posts/aidebt/4-ai-repaying-technical-debt.md';
+import debt5 from './posts/aidebt/5-programs-as-theories.md';
+import debt6 from './posts/aidebt/6-what-the-research-shows.md';
+import debt7 from './posts/aidebt/7-diagnosing-cognitive-debt.md';
+import debt8 from './posts/aidebt/8-intent-debt-why.md';
+import debt9 from './posts/aidebt/9-recording-intent.md';
+import debt10 from './posts/aidebt/10-managing-three-debts.md';
 import { parsePost } from './parse-post.ts';
 
 export const examplePosts = [
@@ -760,4 +770,14 @@ export const examplePosts = [
   gh10,
   gh11,
   gh12,
+  debt1,
+  debt2,
+  debt3,
+  debt4,
+  debt5,
+  debt6,
+  debt7,
+  debt8,
+  debt9,
+  debt10,
 ].map(parsePost);

@@ -38,4 +38,5 @@ export const SERIES: SeriesInfo[] = [
   { name: 'PostgreSQL 실무', slug: 'postgres', description: 'psql과 스키마, 자료형, 제약 조건, 조인과 집계, 윈도 함수와 CTE, B-트리와 실행 계획, GIN·GiST·BRIN, 쿼리 튜닝, 격리 수준, MVCC와 VACUUM, 락과 SKIP LOCKED, JSONB와 전문 검색, 마이그레이션, 백업과 시점 복구, 복제, 권한과 RLS' },
   { name: 'Git 버전 관리', slug: 'git', description: '스냅숏과 세 영역, 블롭·트리·커밋 객체, 브랜치와 HEAD, 병합과 충돌, 리베이스, 원격과 force-with-lease, reset·revert·reflog, bisect, stash·worktree·cherry-pick, 브랜치 전략과 태그, 부분 클론과 LFS, 훅, 서명과 사고 복구' },
   { name: 'GitHub 협업과 자동화', slug: 'github', description: '풀 리퀘스트와 세 가지 병합 방식, 코드 리뷰와 CODEOWNERS, 이슈와 프로젝트, 브랜치 보호와 규칙 세트, GitHub Actions(워크플로·매트릭스·캐시·보안), Pages·GHCR·릴리스 배포, Dependabot과 비밀 스캐닝, gh CLI와 API, 오픈 소스 운영' },
+  { name: 'AI 시대의 소프트웨어 부채', slug: 'aidebt', description: 'LLM과 코딩 에이전트 시대의 기술 부채·인지 부채·의도 부채: 삼중 부채 모델, 커닝햄의 비유, AI 코드의 중복·결함 데이터, AI로 부채 갚기, 나우르의 이론, 연구의 증거와 한계, 팀의 진단, ADR·명세·지침 파일, 함께 관리하기' },
 ];
