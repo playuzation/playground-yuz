@@ -23,10 +23,16 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run verify
+      - uses: actions/upload-artifact@v7
+        with:
+          name: post-visualizations
+          path: packages/demo/dist/visualizations
+          retention-days: 14
 
   e2e:
     name: e2e (Playwright · Chromium)
-    runs-on: ubuntu-latest
+    # Playwright 1.56.1은 Ubuntu 26.04를 지원하지 않는다.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
