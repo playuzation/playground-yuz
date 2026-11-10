@@ -1,4 +1,11 @@
 // 포스트를 어떤 품질·정보·형식으로 쓰면 좋은지 보여 주는 예시 시리즈(보여 줄 순서대로).
+import basic1 from './posts/basics/1-what-is-a-computer.md';
+import basic2 from './posts/basics/2-why-zero-and-one.md';
+import basic3 from './posts/basics/3-what-is-information-theory.md';
+import basic4 from './posts/basics/4-finite-state-machines.md';
+import basic5 from './posts/basics/5-layers-and-speed.md';
+import basic6 from './posts/basics/6-from-rules-to-next-word.md';
+import basic7 from './posts/basics/7-how-ai-agents-work.md';
 import lang1 from './posts/lang/1-programming-languages.md';
 import lang2 from './posts/lang/2-python.md';
 import lang3 from './posts/lang/3-interpreted-languages.md';
@@ -391,6 +398,13 @@ import debt10 from './posts/aidebt/10-managing-three-debts.md';
 import { parsePost } from './parse-post.ts';
 
 export const examplePosts = [
+  basic1,
+  basic2,
+  basic3,
+  basic4,
+  basic5,
+  basic6,
+  basic7,
   lang1,
   lang2,
   lang3,
