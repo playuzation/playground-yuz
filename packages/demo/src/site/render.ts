@@ -80,7 +80,7 @@ function indexPage(entries: Entry[]): Page {
   const body = `      <section class="hero">
         <h1>모바일로만 만든 토이 플랫폼</h1>
         <p>마크다운 포스트·좋아요·댓글만 있는 작은 플랫폼입니다. 휴대폰의 Claude 앱과 클라우드 세션, GitHub만으로 개발하면서 CI와 실제 브라우저 테스트를 어떻게 해낼 수 있는지 실험했습니다.</p>
-        <p class="cta"><a class="button" href="app/">체험하기</a> <a class="button secondary" href="#posts">글 읽기</a></p>
+        <p class="cta"><a class="button" href="app/">체험하기</a> <a class="button secondary" href="#posts">글 읽기</a> <a class="button secondary" href="visualizations/">시각화 모음</a></p>
         <p class="muted">로그인 없이 모든 글을 읽을 수 있습니다. 체험하기에서는 가입하고 글·좋아요·댓글을 남겨 볼 수 있으며, 데이터는 내 브라우저에만 저장됩니다.</p>
       </section>
       <section id="posts">
@@ -123,6 +123,7 @@ function postPage(e: Entry, prev: Entry | undefined, next: Entry | undefined): P
   const body = `      <nav class="crumbs" aria-label="위치"><a href="../../">홈</a> › <a href="../../#${e.series.slug}">${escapeHtml(e.series.name)}</a> › ${e.n}/${e.total}</nav>
       <article class="post">
         <h1>${escapeHtml(e.title)}</h1>
+        <p><a class="button" href="../../visualizations/${e.series.slug}/${e.n}.html">이 글의 시각화 재생하기 →</a></p>
         <div class="markdown">${renderMarkdown(e.body)}</div>
       </article>
       <nav class="pager" aria-label="이전·다음 글">
