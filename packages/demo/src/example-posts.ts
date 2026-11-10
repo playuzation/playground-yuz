@@ -385,6 +385,26 @@ import gh9 from './posts/github/9-deployment-automation.md';
 import gh10 from './posts/github/10-dependency-and-security.md';
 import gh11 from './posts/github/11-gh-cli-and-api.md';
 import gh12 from './posts/github/12-open-source-maintenance.md';
+import web1 from './posts/webapp/1-client-and-server.md';
+import web2 from './posts/webapp/2-browser-runtime.md';
+import web3 from './posts/webapp/3-sandbox-and-origin.md';
+import web4 from './posts/webapp/4-ajax-and-spa.md';
+import web5 from './posts/webapp/5-rendering-strategies.md';
+import web6 from './posts/webapp/6-app-like-web.md';
+import web7 from './posts/webapp/7-packets-ip-tcp-udp.md';
+import web8 from './posts/webapp/8-dns.md';
+import web9 from './posts/webapp/9-http-anatomy.md';
+import web10 from './posts/webapp/10-https-and-tls.md';
+import web11 from './posts/webapp/11-cookies-sessions-tokens.md';
+import web12 from './posts/webapp/12-api-design.md';
+import web13 from './posts/webapp/13-realtime.md';
+import web14 from './posts/webapp/14-long-running-work.md';
+import web15 from './posts/webapp/15-http-evolution.md';
+import web16 from './posts/webapp/16-caching-and-cdn.md';
+import web17 from './posts/webapp/17-sending-less.md';
+import web18 from './posts/webapp/18-proxies-and-load-balancers.md';
+import web19 from './posts/webapp/19-overload-control.md';
+import web20 from './posts/webapp/20-one-click-journey.md';
 import debt1 from './posts/aidebt/1-three-debts-map.md';
 import debt2 from './posts/aidebt/2-technical-debt-revisited.md';
 import debt3 from './posts/aidebt/3-llm-technical-debt-data.md';
@@ -784,6 +804,26 @@ export const examplePosts = [
   gh10,
   gh11,
   gh12,
+  web1,
+  web2,
+  web3,
+  web4,
+  web5,
+  web6,
+  web7,
+  web8,
+  web9,
+  web10,
+  web11,
+  web12,
+  web13,
+  web14,
+  web15,
+  web16,
+  web17,
+  web18,
+  web19,
+  web20,
   debt1,
   debt2,
   debt3,
