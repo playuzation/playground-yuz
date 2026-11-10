@@ -26,7 +26,8 @@ jobs:
 
   e2e:
     name: e2e (Playwright · Chromium)
-    runs-on: ubuntu-latest
+    # ubuntu-latest(26.04)는 고정한 Playwright 1.56.1이 지원하지 않아 브라우저 설치가 실패한다.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
