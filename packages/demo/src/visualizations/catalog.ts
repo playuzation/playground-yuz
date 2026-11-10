@@ -4,7 +4,8 @@ import { structures } from './structures.ts';
 import { hardware } from './hardware.ts';
 import { machineLearning } from './machine-learning.ts';
 import { games } from './games.ts';
+import { development } from './development.ts';
 import { validateLessons } from './model.ts';
 
-export const lessons = [...foundations, ...algorithms, ...structures, ...hardware, ...machineLearning, ...games];
+export const lessons = [...foundations, ...algorithms, ...structures, ...hardware, ...machineLearning, ...games, ...development];
 export const byKey = validateLessons(lessons);

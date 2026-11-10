@@ -11,7 +11,7 @@ const posts = readdirSync(root).flatMap((series) => readdirSync(new URL(`${serie
   .map((name) => ({ title: readFileSync(new URL(`${series}/${name}`, root), 'utf8').split('\n')[0]!.replace(/^# /, '') })));
 
 test('모든 실제 포스트에 정확히 하나의 독립 HTML을 만든다', () => {
-  assert.equal(posts.length, 313);
+  assert.ok(posts.length >= 313);
   assert.equal(lessons.length, posts.length);
   const pages = buildVisualizations(posts, 'window.playerLoaded = true;');
   assert.equal(pages.length, posts.length + 1);

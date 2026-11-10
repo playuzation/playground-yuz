@@ -64,14 +64,14 @@ test('시각화 목록은 제목·주제·시리즈로 검색할 수 있다', as
   await page.getByRole('searchbox').fill('존재하지않는검색어');
   await expect(page.locator('#matches')).toHaveText('0개 시각화');
   await page.getByRole('searchbox').fill('');
-  await expect(page.locator('#matches')).toHaveText('313개 시각화');
+  await expect(page.locator('#matches')).toHaveText('396개 시각화');
 });
 
-test('313개 HTML의 모든 단계가 오류 없이 그려진다', async ({ page }) => {
+test('396개 HTML의 모든 단계가 오류 없이 그려진다', async ({ page }) => {
   test.setTimeout(240_000);
   const root = new URL('../../packages/demo/dist/visualizations/', import.meta.url);
   const keys = readdirSync(root).filter((s) => !s.endsWith('.html')).flatMap((s) => readdirSync(new URL(`${s}/`, root)).map((n) => `${s}/${n}`));
-  expect(keys.length).toBe(313);
+  expect(keys.length).toBe(396);
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
   for (const key of keys) {

@@ -1,5 +1,7 @@
 # 포스트와 시리즈 목록
 
+> 최신 dev 통합 안내: 현재 사이트는 34개 시리즈·396편이다. 아래 목록은 최초 검토 당시의 27개 시리즈·313편을 기록한다. 추가된 7개 시리즈·83편도 시각화를 연결했으며, 원문 전체 감수를 했다는 뜻은 아니다.
+
 검토 기준: `main`의 `83dfff8`에서 분기한 `docs/renewal`.
 
 27개 시리즈, 총 313편. 시리즈 정의(`src/site/series.ts`)와 원문 제목의 시리즈명·순서·전체 편수를 대조했다. 아래의 ‘목록·요약 검토’는 주제와 요약·정리 중심으로 살펴봤다는 뜻이며, 본문 전체의 사실관계나 모든 예제 실행을 검증했다는 표시는 아니다. 수정 이유와 검증 범위는 [검토 기록](post-review.md)에 있다.
@@ -508,3 +510,91 @@
 | 14 | [라이브 서비스: 시즌, 배틀 패스, 콘텐츠 소비 속도](../packages/demo/src/posts/leveldesign/14-live-service-battle-pass.md) | 목록·요약 검토 |
 | 15 | [데이터로 판단하기: 텔레메트리, 퍼널, 히트맵, A/B 테스트](../packages/demo/src/posts/leveldesign/15-telemetry-funnel-ab.md) | 목록·요약 검토 |
 | 16 | [콘텐츠 파이프라인: 데이터 주도 설계, 검증 도구, 패치 배포](../packages/demo/src/posts/leveldesign/16-content-pipeline.md) | 목록·요약 검토 |
+
+## dev 통합으로 추가된 포스트
+
+| 시리즈 | 글 |
+|---|---|
+| 컴퓨터와 AI의 첫걸음 | [컴퓨터란 무엇인가: 규칙대로 기호를 바꾸는 범용 기계](../packages/demo/src/posts/basics/1-what-is-a-computer.md) |
+| 컴퓨터와 AI의 첫걸음 | [왜 0과 1인가: 비트와 이진법이 이긴 이유](../packages/demo/src/posts/basics/2-why-zero-and-one.md) |
+| 컴퓨터와 AI의 첫걸음 | [정보 이론이란 무엇인가: 놀라움을 비트로 재기](../packages/demo/src/posts/basics/3-what-is-information-theory.md) |
+| 컴퓨터와 AI의 첫걸음 | [유한상태기계란 무엇인가: 기억이 정해진 만큼인 기계](../packages/demo/src/posts/basics/4-finite-state-machines.md) |
+| 컴퓨터와 AI의 첫걸음 | [현대 컴퓨터는 어떻게 복잡한 일을 하나: 층층이 쌓은 추상화와 속도](../packages/demo/src/posts/basics/5-layers-and-speed.md) |
+| 컴퓨터와 AI의 첫걸음 | [AI는 어떻게 사람과 대화하게 되었나: 규칙에서 다음 단어 예측까지](../packages/demo/src/posts/basics/6-from-rules-to-next-word.md) |
+| 컴퓨터와 AI의 첫걸음 | [AI 에이전트는 어떻게 일을 하나: 도구, 반복, 그리고 사람의 감독](../packages/demo/src/posts/basics/7-how-ai-agents-work.md) |
+| WSL 개발 환경 | [WSL이란: 윈도우 안의 리눅스, WSL 1과 WSL 2의 구조](../packages/demo/src/posts/wsl/1-what-is-wsl.md) |
+| WSL 개발 환경 | [설치와 배포판 관리: wsl 명령으로 설치, 전환, 백업, 이동하기](../packages/demo/src/posts/wsl/2-install-and-manage.md) |
+| WSL 개발 환경 | [파일 시스템: 리눅스 쪽 ext4와 /mnt/c, 어디에 코드를 둘까](../packages/demo/src/posts/wsl/3-file-systems.md) |
+| WSL 개발 환경 | [윈도우와 리눅스 사이의 파일 함정: 줄바꿈, 실행 권한, 대소문자](../packages/demo/src/posts/wsl/4-file-pitfalls.md) |
+| WSL 개발 환경 | [상호 운용: 리눅스에서 윈도우 프로그램을, 윈도우에서 리눅스 명령을](../packages/demo/src/posts/wsl/5-interop.md) |
+| WSL 개발 환경 | [wsl.conf와 .wslconfig: 배포판 설정과 가상 머신 설정](../packages/demo/src/posts/wsl/6-wsl-conf-and-wslconfig.md) |
+| WSL 개발 환경 | [네트워크: NAT와 미러 모드, localhost 포워딩, 포트 열기](../packages/demo/src/posts/wsl/7-networking.md) |
+| WSL 개발 환경 | [systemd와 백그라운드 서비스: WSL에서 데몬 운영하기](../packages/demo/src/posts/wsl/8-systemd-and-services.md) |
+| WSL 개발 환경 | [WSL에서 개발 도구 쓰기: VS Code, 도커, GPU, GUI 앱](../packages/demo/src/posts/wsl/9-dev-tools.md) |
+| WSL 개발 환경 | [문제 해결과 관리: 디스크 회수, 메모리, 흔한 오류](../packages/demo/src/posts/wsl/10-troubleshooting.md) |
+| 도커와 컨테이너 | [컨테이너란: 격리된 프로세스, 이미지, 가상 머신과의 차이](../packages/demo/src/posts/docker/1-what-is-a-container.md) |
+| 도커와 컨테이너 | [이미지와 레이어: 유니온 파일 시스템, 태그, 다이제스트](../packages/demo/src/posts/docker/2-images-and-layers.md) |
+| 도커와 컨테이너 | [컨테이너 생명 주기: run, exec, logs, stop과 시그널](../packages/demo/src/posts/docker/3-container-lifecycle.md) |
+| 도커와 컨테이너 | [Dockerfile 기초: 명령어, 빌드 컨텍스트, CMD와 ENTRYPOINT](../packages/demo/src/posts/docker/4-dockerfile-basics.md) |
+| 도커와 컨테이너 | [빌드 캐시: 레이어 순서와 BuildKit으로 빠르게 빌드하기](../packages/demo/src/posts/docker/5-build-cache.md) |
+| 도커와 컨테이너 | [멀티 스테이지 빌드: 작고 안전한 실행 이미지 만들기](../packages/demo/src/posts/docker/6-multi-stage-build.md) |
+| 도커와 컨테이너 | [볼륨과 바인드 마운트: 데이터는 컨테이너 밖에 둔다](../packages/demo/src/posts/docker/7-volumes-and-bind-mounts.md) |
+| 도커와 컨테이너 | [컨테이너 네트워크: 브리지, 포트 공개, 내장 DNS](../packages/demo/src/posts/docker/8-container-networking.md) |
+| 도커와 컨테이너 | [Docker Compose: 여러 컨테이너를 한 파일로 정의하기](../packages/demo/src/posts/docker/9-docker-compose.md) |
+| 도커와 컨테이너 | [설정과 비밀: 환경 변수, 빌드 인자, 시크릿을 다루는 법](../packages/demo/src/posts/docker/10-config-and-secrets.md) |
+| 도커와 컨테이너 | [컨테이너 보안: 루트가 아닌 사용자, 권한 줄이기, 이미지 점검](../packages/demo/src/posts/docker/11-container-security.md) |
+| 도커와 컨테이너 | [리소스 제한과 관찰: cgroups, OOM, 헬스 체크, 로그](../packages/demo/src/posts/docker/12-resources-observability.md) |
+| 도커와 컨테이너 | [이미지 배포: 레지스트리, 태그 전략, 멀티 아키텍처 빌드](../packages/demo/src/posts/docker/13-image-distribution.md) |
+| 도커와 컨테이너 | [컨테이너로 일하는 습관: 개발 환경, 디버깅, 정리, 그다음 단계](../packages/demo/src/posts/docker/14-working-habits.md) |
+| PostgreSQL 실무 | [PostgreSQL 시작하기: 서버, psql, 데이터베이스와 스키마](../packages/demo/src/posts/postgres/1-getting-started.md) |
+| PostgreSQL 실무 | [자료형 고르기: 숫자, 문자열, 시간, UUID, 배열](../packages/demo/src/posts/postgres/2-data-types.md) |
+| PostgreSQL 실무 | [제약 조건: 기본 키, 외래 키, UNIQUE, CHECK, 배제 제약](../packages/demo/src/posts/postgres/3-constraints.md) |
+| PostgreSQL 실무 | [조인과 집계: NULL을 조심하며 데이터를 엮고 요약하기](../packages/demo/src/posts/postgres/4-joins-and-aggregates.md) |
+| PostgreSQL 실무 | [윈도 함수와 CTE: 순위, 누적 합, 재귀 쿼리](../packages/demo/src/posts/postgres/5-window-functions-cte.md) |
+| PostgreSQL 실무 | [인덱스 1: B-트리와 실행 계획 읽기](../packages/demo/src/posts/postgres/6-btree-index-explain.md) |
+| PostgreSQL 실무 | [인덱스 2: 복합·부분·표현식 인덱스와 GIN, GiST, BRIN](../packages/demo/src/posts/postgres/7-advanced-indexes.md) |
+| PostgreSQL 실무 | [쿼리 튜닝: EXPLAIN ANALYZE, 통계, 느린 쿼리의 전형](../packages/demo/src/posts/postgres/8-query-tuning.md) |
+| PostgreSQL 실무 | [트랜잭션과 격리 수준: 동시에 실행될 때 생기는 이상 현상](../packages/demo/src/posts/postgres/9-transactions-isolation.md) |
+| PostgreSQL 실무 | [MVCC와 VACUUM: 행 버전, 팽창, 트랜잭션 ID 고갈](../packages/demo/src/posts/postgres/10-mvcc-vacuum.md) |
+| PostgreSQL 실무 | [락과 동시성: 행 잠금, SKIP LOCKED 작업 큐, 교착 상태](../packages/demo/src/posts/postgres/11-locks-concurrency.md) |
+| PostgreSQL 실무 | [JSONB와 전문 검색: 관계형 안에서 문서와 텍스트 다루기](../packages/demo/src/posts/postgres/12-jsonb-full-text-search.md) |
+| PostgreSQL 실무 | [스키마 마이그레이션: 운영 중인 테이블을 안전하게 바꾸기](../packages/demo/src/posts/postgres/13-schema-migration.md) |
+| PostgreSQL 실무 | [백업과 복구: pg_dump, WAL 아카이브, 시점 복구](../packages/demo/src/posts/postgres/14-backup-and-recovery.md) |
+| PostgreSQL 실무 | [복제와 고가용성: 스트리밍 복제, 논리 복제, 장애 조치](../packages/demo/src/posts/postgres/15-replication-and-ha.md) |
+| PostgreSQL 실무 | [운영과 보안: 권한, 행 수준 보안, 연결 관리, 모니터링](../packages/demo/src/posts/postgres/16-operations-and-security.md) |
+| Git 버전 관리 | [Git이란: 스냅숏으로 기록하는 분산 버전 관리](../packages/demo/src/posts/git/1-what-is-git.md) |
+| Git 버전 관리 | [커밋의 기본: 작업 트리, 스테이징 영역, 저장소](../packages/demo/src/posts/git/2-commit-basics.md) |
+| Git 버전 관리 | [Git 내부 구조: 블롭, 트리, 커밋 객체와 참조](../packages/demo/src/posts/git/3-git-objects.md) |
+| Git 버전 관리 | [브랜치와 HEAD: 움직이는 포인터로 갈라지기](../packages/demo/src/posts/git/4-branches-and-head.md) |
+| Git 버전 관리 | [병합: fast-forward, 3-way 병합, 충돌 해결](../packages/demo/src/posts/git/5-merge.md) |
+| Git 버전 관리 | [리베이스: 커밋을 다시 쌓는 법과 지켜야 할 규칙](../packages/demo/src/posts/git/6-rebase.md) |
+| Git 버전 관리 | [원격 저장소: clone, fetch, pull, push와 추적 브랜치](../packages/demo/src/posts/git/7-remote.md) |
+| Git 버전 관리 | [되돌리기: restore, reset, revert, reflog](../packages/demo/src/posts/git/8-undo.md) |
+| Git 버전 관리 | [이력 탐색과 디버깅: log 필터, blame, bisect](../packages/demo/src/posts/git/9-history.md) |
+| Git 버전 관리 | [stash, worktree, cherry-pick: 작업을 잠시 두고, 나누고, 옮기기](../packages/demo/src/posts/git/10-stash-worktree-cherry-pick.md) |
+| Git 버전 관리 | [브랜치 전략과 태그: Git Flow, GitHub Flow, 트렁크 기반 개발](../packages/demo/src/posts/git/11-branching-strategies-and-tags.md) |
+| Git 버전 관리 | [큰 저장소 다루기: 얕은 클론, 부분 클론, 희소 체크아웃, Git LFS](../packages/demo/src/posts/git/12-large-repositories.md) |
+| Git 버전 관리 | [Git 훅: 커밋과 푸시 전에 자동으로 검사하기](../packages/demo/src/posts/git/13-git-hooks.md) |
+| Git 버전 관리 | [설정과 사고 복구: 별칭, 조건부 설정, 커밋 서명, 비밀 유출 대응](../packages/demo/src/posts/git/14-config-signing-and-recovery.md) |
+| GitHub 협업과 자동화 | [GitHub란: 원격 저장소에서 개발 플랫폼까지](../packages/demo/src/posts/github/1-what-is-github.md) |
+| GitHub 협업과 자동화 | [풀 리퀘스트: 브랜치에서 병합까지, 세 가지 병합 방식](../packages/demo/src/posts/github/2-pull-requests-and-merge-methods.md) |
+| GitHub 협업과 자동화 | [코드 리뷰와 CODEOWNERS: 리뷰를 요청하고 주고받는 법](../packages/demo/src/posts/github/3-code-review-and-codeowners.md) |
+| GitHub 협업과 자동화 | [이슈와 프로젝트: 할 일을 추적하고 계획하기](../packages/demo/src/posts/github/4-issues-and-projects.md) |
+| GitHub 협업과 자동화 | [브랜치 보호와 규칙 세트: main을 지키는 장치](../packages/demo/src/posts/github/5-branch-protection-rulesets.md) |
+| GitHub 협업과 자동화 | [GitHub Actions 1: 워크플로, 이벤트, 잡, 스텝](../packages/demo/src/posts/github/6-actions-workflows-events-jobs-steps.md) |
+| GitHub 협업과 자동화 | [GitHub Actions 2: 매트릭스, 캐시, 아티팩트, 재사용 워크플로](../packages/demo/src/posts/github/7-actions-matrix-cache-artifacts-reuse.md) |
+| GitHub 협업과 자동화 | [GitHub Actions 3: 비밀, 권한, OIDC, 서드파티 액션의 위험](../packages/demo/src/posts/github/8-actions-secrets-permissions-oidc.md) |
+| GitHub 협업과 자동화 | [배포 자동화: GitHub Pages, 컨테이너 레지스트리, 릴리스](../packages/demo/src/posts/github/9-deployment-automation.md) |
+| GitHub 협업과 자동화 | [의존성과 보안: Dependabot, 코드 스캐닝, 비밀 스캐닝](../packages/demo/src/posts/github/10-dependency-and-security.md) |
+| GitHub 협업과 자동화 | [gh CLI와 API: 터미널과 스크립트로 GitHub 다루기](../packages/demo/src/posts/github/11-gh-cli-and-api.md) |
+| GitHub 협업과 자동화 | [오픈 소스 운영: README, 라이선스, 기여 안내, 커뮤니티 파일](../packages/demo/src/posts/github/12-open-source-maintenance.md) |
+| AI 시대의 소프트웨어 부채 | [세 가지 부채: AI가 바꾼 소프트웨어 건강의 지도](../packages/demo/src/posts/aidebt/1-three-debts-map.md) |
+| AI 시대의 소프트웨어 부채 | [기술 부채 다시 읽기: 커닝햄의 비유와 이자의 정체](../packages/demo/src/posts/aidebt/2-technical-debt-revisited.md) |
+| AI 시대의 소프트웨어 부채 | [LLM이 만드는 기술 부채: 중복, 변동, 결함에 관한 데이터](../packages/demo/src/posts/aidebt/3-llm-technical-debt-data.md) |
+| AI 시대의 소프트웨어 부채 | [AI는 기술 부채를 갚을 수도 있다: 리팩터링, 테스트, 그리고 에이전트 기술 부채](../packages/demo/src/posts/aidebt/4-ai-repaying-technical-debt.md) |
+| AI 시대의 소프트웨어 부채 | [인지 부채 1: 프로그램은 사람 머릿속의 이론이다](../packages/demo/src/posts/aidebt/5-programs-as-theories.md) |
+| AI 시대의 소프트웨어 부채 | [인지 부채 2: 연구가 보여 주는 것과 보여 주지 않는 것](../packages/demo/src/posts/aidebt/6-what-the-research-shows.md) |
+| AI 시대의 소프트웨어 부채 | [인지 부채 3: 팀에서 진단하고 갚는 법](../packages/demo/src/posts/aidebt/7-diagnosing-cognitive-debt.md) |
+| AI 시대의 소프트웨어 부채 | [의도 부채 1: 코드는 무엇을 하는지 말하지만 왜 하는지는 말하지 않는다](../packages/demo/src/posts/aidebt/8-intent-debt-why.md) |
+| AI 시대의 소프트웨어 부채 | [의도 부채 2: 의도를 기록하는 도구들](../packages/demo/src/posts/aidebt/9-recording-intent.md) |
+| AI 시대의 소프트웨어 부채 | [세 부채를 함께 관리하기: 상호작용, 지표, 그리고 열린 질문](../packages/demo/src/posts/aidebt/10-managing-three-debts.md) |
