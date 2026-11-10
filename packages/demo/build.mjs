@@ -37,7 +37,11 @@ const site = await build({
   logLevel: 'warning',
 });
 const { pages } = await import(`data:text/javascript;base64,${Buffer.from(site.outputFiles[0].text).toString('base64')}`);
-for (const page of pages()) {
+const player = await build({
+  entryPoints: [here('src/visualizations/player.ts')], bundle: true,
+  format: 'iife', target: 'es2022', minify: true, write: false,
+});
+for (const page of pages(player.outputFiles[0].text)) {
   mkdirSync(dirname(here(`dist/${page.path}`)), { recursive: true });
   writeFileSync(here(`dist/${page.path}`), page.html);
 }
