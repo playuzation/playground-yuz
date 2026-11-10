@@ -32,6 +32,7 @@
 - `npm run verify`: 의존 규칙 검사, 타입 검사, 테스트 350개, 정적 사이트와 앱 빌드 통과.
 - 기존 Playwright E2E: 35개 통과, 4개 건너뜀. 저장소의 프로젝트별 skip 조건에 따른 것으로 실패는 없다. 이 환경의 `/usr/bin/chromium`을 쓰는 임시 설정으로 실행했고, 배포용 설정은 수정하지 않았다. 비디오는 끄고 기존 테스트의 스크린샷과 trace 설정을 유지했다.
 - `git diff --check`: 공백 오류 없음.
+- [GitHub CI 실행 42729315056](https://github.com/playuzation/playground-yuz/actions/runs/42729315056): verify 성공. E2E는 테스트 전 `playwright install --with-deps chromium`에서 실패했다. 실행기 OS가 `ubuntu26.04-x64`이며 고정 버전 Playwright 1.56.1이 이를 지원하지 않는다는 오류다. 문서 변경으로 인한 테스트 실패로 확인된 것은 아니다. 이번 docs 브랜치에서는 workflow와 Playwright 버전을 변경하지 않았다. 후속 CI 수리는 지원되는 OS(예: Ubuntu 24.04)로 실행기를 고정하는 방안부터 검토할 수 있다.
 
 위 검사는 사이트와 앱의 회귀 및 문서 구조를 확인한다. 테스트 통과를 글 내용의 수학적·과학적 정확성 증거로 사용하지 않는다. 문서의 수치 예제 전체를 재실행한 것은 아니며, CUDA 커널이나 GPU 성능을 실제 하드웨어로 측정하지 않았다. 이번 변경에서 예제의 계산 알고리즘은 바꾸지 않았고 퍼셉트론 출력의 설명 문구만 함께 고쳤다.
 
