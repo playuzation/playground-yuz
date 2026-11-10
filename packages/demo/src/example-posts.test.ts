@@ -25,6 +25,7 @@ test('모든 예시 포스트가 example-posts.ts에 등록되어 있다', () =>
     'ai',
     'aidebt',
     'attention',
+    'basics',
     'calculus',
     'cpu',
     'datastructures',

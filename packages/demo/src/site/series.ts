@@ -6,6 +6,7 @@ export interface SeriesInfo {
 }
 
 export const SERIES: SeriesInfo[] = [
+  { name: '컴퓨터와 AI의 첫걸음', slug: 'basics', description: '프로그래밍·AI 입문 전에: 컴퓨터란 무엇인가, 왜 0과 1인가, 정보 이론, 유한상태기계, 현대 컴퓨터가 복잡한 일을 하는 법, 대화하는 AI, 일하는 AI 에이전트' },
   { name: '언어 기초', slug: 'lang', description: '프로그래밍 언어가 실행되는 방식: 파이썬, 러스트, 자바스크립트, 자바, 컴파일과 링크' },
   { name: 'AI 기초', slug: 'ai', description: '딥러닝과 강화학습, 데이터 분포와 컴퓨터 사이언스로 보는 AI 모델' },
   { name: '이산수학', slug: 'discrete', description: '집합, 논리, 그래프, 점근 표기법: 프로그래밍의 바탕이 되는 수학' },
