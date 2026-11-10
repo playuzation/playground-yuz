@@ -52,6 +52,7 @@ test('모든 예시 포스트가 example-posts.ts에 등록되어 있다', () =>
     'statistics',
     'strings',
     'techniques',
+    'webapp',
     'wsl',
   ]);
   for (const dir of series) {
