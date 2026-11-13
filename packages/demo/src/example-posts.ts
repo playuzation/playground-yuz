@@ -405,6 +405,72 @@ import web17 from './posts/webapp/17-sending-less.md';
 import web18 from './posts/webapp/18-proxies-and-load-balancers.md';
 import web19 from './posts/webapp/19-overload-control.md';
 import web20 from './posts/webapp/20-one-click-journey.md';
+import ngx1 from './posts/nginx/1-what-is-nginx.md';
+import ngx2 from './posts/nginx/2-config-structure.md';
+import ngx3 from './posts/nginx/3-static-files.md';
+import ngx4 from './posts/nginx/4-location-matching.md';
+import ngx5 from './posts/nginx/5-reverse-proxy.md';
+import ngx6 from './posts/nginx/6-load-balancing.md';
+import ngx7 from './posts/nginx/7-https-and-http2.md';
+import ngx8 from './posts/nginx/8-cache-and-compression.md';
+import ngx9 from './posts/nginx/9-rate-limit-and-access.md';
+import ngx10 from './posts/nginx/10-logs-and-troubleshooting.md';
+import rds1 from './posts/redis/1-what-is-redis.md';
+import rds2 from './posts/redis/2-keys-and-strings.md';
+import rds3 from './posts/redis/3-data-structures.md';
+import rds4 from './posts/redis/4-caching.md';
+import rds5 from './posts/redis/5-atomicity-and-rate-limit.md';
+import rds6 from './posts/redis/6-pubsub-and-streams.md';
+import rds7 from './posts/redis/7-persistence.md';
+import rds8 from './posts/redis/8-replication-and-ha.md';
+import rds9 from './posts/redis/9-performance-and-memory.md';
+import rds10 from './posts/redis/10-operations-and-security.md';
+import kfk1 from './posts/kafka/1-what-is-kafka.md';
+import kfk2 from './posts/kafka/2-setup-and-console.md';
+import kfk3 from './posts/kafka/3-topics-and-partitions.md';
+import kfk4 from './posts/kafka/4-offsets-and-retention.md';
+import kfk5 from './posts/kafka/5-producers.md';
+import kfk6 from './posts/kafka/6-consumer-groups.md';
+import kfk7 from './posts/kafka/7-commits-and-delivery.md';
+import kfk8 from './posts/kafka/8-replication-and-failover.md';
+import kfk9 from './posts/kafka/9-kraft.md';
+import kfk10 from './posts/kafka/10-log-compaction.md';
+import kfk11 from './posts/kafka/11-transactions.md';
+import kfk12 from './posts/kafka/12-ecosystem-and-operations.md';
+import k8s1 from './posts/kubernetes/1-what-is-kubernetes.md';
+import k8s2 from './posts/kubernetes/2-cluster-and-kubectl.md';
+import k8s3 from './posts/kubernetes/3-pods.md';
+import k8s4 from './posts/kubernetes/4-deployments.md';
+import k8s5 from './posts/kubernetes/5-services-and-dns.md';
+import k8s6 from './posts/kubernetes/6-ingress-and-gateway.md';
+import k8s7 from './posts/kubernetes/7-configmaps-and-secrets.md';
+import k8s8 from './posts/kubernetes/8-volumes-and-statefulsets.md';
+import k8s9 from './posts/kubernetes/9-resources.md';
+import k8s10 from './posts/kubernetes/10-probes-and-shutdown.md';
+import k8s11 from './posts/kubernetes/11-autoscaling.md';
+import k8s12 from './posts/kubernetes/12-jobs-cronjobs-daemonsets.md';
+import k8s13 from './posts/kubernetes/13-namespaces-rbac-netpol.md';
+import k8s14 from './posts/kubernetes/14-delivery-and-operations.md';
+import tf1 from './posts/terraform/1-what-is-terraform.md';
+import tf2 from './posts/terraform/2-hcl-and-workflow.md';
+import tf3 from './posts/terraform/3-state.md';
+import tf4 from './posts/terraform/4-variables-outputs-locals.md';
+import tf5 from './posts/terraform/5-dependencies-and-graph.md';
+import tf6 from './posts/terraform/6-count-and-for-each.md';
+import tf7 from './posts/terraform/7-modules.md';
+import tf8 from './posts/terraform/8-remote-state-and-locking.md';
+import tf9 from './posts/terraform/9-safe-changes.md';
+import tf10 from './posts/terraform/10-team-workflow.md';
+import mon1 from './posts/monitoring/1-what-is-monitoring.md';
+import mon2 from './posts/monitoring/2-scraping-and-targets.md';
+import mon3 from './posts/monitoring/3-metric-types.md';
+import mon4 from './posts/monitoring/4-instrumenting-apps.md';
+import mon5 from './posts/monitoring/5-promql-selectors-and-rate.md';
+import mon6 from './posts/monitoring/6-promql-aggregation.md';
+import mon7 from './posts/monitoring/7-use-and-red.md';
+import mon8 from './posts/monitoring/8-rules-and-alerts.md';
+import mon9 from './posts/monitoring/9-grafana-dashboards.md';
+import mon10 from './posts/monitoring/10-operations-and-scaling.md';
 import debt1 from './posts/aidebt/1-three-debts-map.md';
 import debt2 from './posts/aidebt/2-technical-debt-revisited.md';
 import debt3 from './posts/aidebt/3-llm-technical-debt-data.md';
@@ -824,6 +890,72 @@ export const examplePosts = [
   web18,
   web19,
   web20,
+  ngx1,
+  ngx2,
+  ngx3,
+  ngx4,
+  ngx5,
+  ngx6,
+  ngx7,
+  ngx8,
+  ngx9,
+  ngx10,
+  rds1,
+  rds2,
+  rds3,
+  rds4,
+  rds5,
+  rds6,
+  rds7,
+  rds8,
+  rds9,
+  rds10,
+  kfk1,
+  kfk2,
+  kfk3,
+  kfk4,
+  kfk5,
+  kfk6,
+  kfk7,
+  kfk8,
+  kfk9,
+  kfk10,
+  kfk11,
+  kfk12,
+  k8s1,
+  k8s2,
+  k8s3,
+  k8s4,
+  k8s5,
+  k8s6,
+  k8s7,
+  k8s8,
+  k8s9,
+  k8s10,
+  k8s11,
+  k8s12,
+  k8s13,
+  k8s14,
+  tf1,
+  tf2,
+  tf3,
+  tf4,
+  tf5,
+  tf6,
+  tf7,
+  tf8,
+  tf9,
+  tf10,
+  mon1,
+  mon2,
+  mon3,
+  mon4,
+  mon5,
+  mon6,
+  mon7,
+  mon8,
+  mon9,
+  mon10,
   debt1,
   debt2,
   debt3,
