@@ -40,5 +40,11 @@ export const SERIES: SeriesInfo[] = [
   { name: 'Git 버전 관리', slug: 'git', description: '스냅숏과 세 영역, 블롭·트리·커밋 객체, 브랜치와 HEAD, 병합과 충돌, 리베이스, 원격과 force-with-lease, reset·revert·reflog, bisect, stash·worktree·cherry-pick, 브랜치 전략과 태그, 부분 클론과 LFS, 훅, 서명과 사고 복구' },
   { name: 'GitHub 협업과 자동화', slug: 'github', description: '풀 리퀘스트와 세 가지 병합 방식, 코드 리뷰와 CODEOWNERS, 이슈와 프로젝트, 브랜치 보호와 규칙 세트, GitHub Actions(워크플로·매트릭스·캐시·보안), Pages·GHCR·릴리스 배포, Dependabot과 비밀 스캐닝, gh CLI와 API, 오픈 소스 운영' },
   { name: '웹 앱의 원리', slug: 'webapp', description: '클라이언트와 서버의 분리, 브라우저 실행 환경, 동일 출처 정책과 CORS, AJAX·SPA와 렌더링 전략, PWA·WebAssembly, IP·TCP·UDP와 DNS, HTTP와 TLS, 쿠키·세션·토큰, REST·GraphQL·gRPC, 실시간 통신, 작업 큐와 멱등 키, HTTP/2·3, 캐시와 CDN, 압축과 페이지네이션, 로드 밸런서, 혼잡 제어·레이트 리밋·서킷 브레이커' },
+  { name: 'Nginx 웹 서버', slug: 'nginx', description: '이벤트 기반 구조와 C10K, 설정 블록과 상속, 정적 파일과 try_files, location 우선순위, 리버스 프록시와 헤더, upstream 로드 밸런싱, HTTPS·HTTP/2·HSTS, proxy_cache와 gzip, limit_req·limit_conn·접근 제어, 로그와 502·504 문제 해결' },
+  { name: 'Redis 실무', slug: 'redis', description: '메모리 위의 자료 구조 서버, 문자열·만료·INCR, 리스트·해시·셋·정렬된 셋, 캐시 어사이드와 메모리 정책, 원자적 연산·트랜잭션·Lua와 레이트 리밋, Pub/Sub과 스트림, RDB·AOF 영속성, 복제·센티널·클러스터, 파이프라이닝과 느린 명령, ACL과 운영' },
+  { name: '카프카 이벤트 스트리밍', slug: 'kafka', description: '지워지지 않는 로그, KRaft 브로커와 콘솔 도구, 파티션과 키별 순서, 오프셋과 보존, 프로듀서의 acks·배치·압축·멱등성, 컨슈머 그룹과 리밸런스, 커밋과 전달 보장, 복제와 ISR, KRaft 컨트롤러 쿼럼, 로그 컴팩션, 트랜잭션, Connect·Streams·스키마·지연 감시' },
+  { name: '쿠버네티스 실무', slug: 'kubernetes', description: '선언형 API와 조정 루프, 로컬 클러스터와 kubectl, 파드·디플로이먼트·롤링 업데이트, 서비스와 DNS, 인그레스와 게이트웨이 API, ConfigMap·Secret, 볼륨과 StatefulSet, 요청·제한·QoS·OOMKilled, 프로브와 우아한 종료, HPA, 잡·크론잡·데몬셋, 네임스페이스·RBAC·네트워크 정책, Helm·Kustomize·GitOps와 문제 해결' },
+  { name: 'Terraform 인프라 코드', slug: 'terraform', description: '인프라를 코드로와 선언형, HCL과 init·plan·apply·destroy, 상태 파일과 드리프트, 변수·출력·locals, 의존 그래프, count와 for_each, 모듈, 원격 상태와 잠금, lifecycle·moved·import·replace, CI의 plan·테스트·드리프트 감지' },
+  { name: 'Prometheus와 Grafana 모니터링', slug: 'monitoring', description: '메트릭·로그·트레이스, 스크레이프와 타깃, 카운터·게이지·히스토그램, 앱 계측, PromQL의 rate·집계·백분위수, 노드 익스포터와 USE·RED, 기록 규칙과 Alertmanager, Grafana 대시보드와 프로비저닝, 보존·카디널리티·원격 저장·OpenTelemetry' },
   { name: 'AI 시대의 소프트웨어 부채', slug: 'aidebt', description: 'LLM과 코딩 에이전트 시대의 기술 부채·인지 부채·의도 부채: 삼중 부채 모델, 커닝햄의 비유, AI 코드의 중복·결함 데이터, AI로 부채 갚기, 나우르의 이론, 연구의 증거와 한계, 팀의 진단, ADR·명세·지침 파일, 함께 관리하기' },
 ];
